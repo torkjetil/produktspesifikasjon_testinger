@@ -44,7 +44,7 @@ NADAG og bidragsytere er ikke ansvarlige for den enkeltes bruk av datasettene. D
 > **Kontaktinformasjon:** Norges geologiske undersøkelse, [inger-lise.solberg@ngu.no](mailto:inger-lise.solberg@ngu.no)
 
 ## Om produktet Nasjonal database for grunnundersøkelser (NADAG)
-
+Beskriv kort hva produktet inneholder, hvem som forvalter det og hvordan det er strukturert.
 
 > **Romlig representasjonstype:** Vektor<br>
 > **Unik identifikator:** <https://data.geonorge.no/sosi/geologi/nadag><br>
