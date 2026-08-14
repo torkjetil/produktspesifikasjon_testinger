@@ -158,7 +158,7 @@ Fra og med 2025 er det lovfestet plikt for innmelding av geotekniske grunnunders
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-08-12
+**Metadatadato**: 2026-08-14
 
 **språk**: nor
 
