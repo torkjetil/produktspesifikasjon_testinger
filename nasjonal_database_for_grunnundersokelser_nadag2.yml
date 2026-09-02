@@ -1,0 +1,10 @@
+metadataId: bf45a463-434d-4b4d-84dc-9325780ab5fb
+output_directory: produktspesifikasjon
+product_slug: nasjonal_database_for_grunnundersokelser_nadag2
+updated: '2026-09-02'
+outputs: geopackage,xsd,jsonschema
+scopes:
+- name: uml modell
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/NGU/Grunnunders%c3%b8kelser.xml
+  generator: xmi
+  description: ''
