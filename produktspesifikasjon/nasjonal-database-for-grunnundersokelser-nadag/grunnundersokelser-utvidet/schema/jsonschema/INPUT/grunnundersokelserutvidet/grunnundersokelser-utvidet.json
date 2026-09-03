@@ -1,0 +1,551 @@
+{
+  "$comment": "JSON Schema document created by ShapeChange - https://shapechange.net/",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://skjema.geonorge.no/SOSI/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag/grunnundersokelser-utvidet/grunnundersokelserutvidet/grunnundersokelser-utvidet.json",
+  "definitions": {
+    "BorlengdeKvalitet": {
+      "type": "string",
+      "enum": [
+        "1",
+        "2"
+      ]
+    },
+    "BorlengdeTilBerg": {
+      "type": "object",
+      "properties": {
+        "borlengdeKvalitet": {
+          "$ref": "#/definitions/BorlengdeKvalitet"
+        },
+        "borlengdeTilBerg": {
+          "type": "number"
+        }
+      }
+    },
+    "DokumentType": {
+      "type": "string",
+      "enum": [
+        "AssessmentReport",
+        "BoreHoleAttachment",
+        "DigitizedDwg",
+        "DigitizedImage",
+        "Drawing",
+        "GeoReport",
+        "Image",
+        "LabReport",
+        "Model",
+        "NotSpecified",
+        "PlanPdf",
+        "PlanSymbolImage",
+        "ProfileImage",
+        "ProfilePdf",
+        "RawdataFile"
+      ]
+    },
+    "EksternIdentifikasjon": {
+      "type": "object",
+      "properties": {
+        "eksternId": {
+          "type": "string"
+        },
+        "eksternNavnerom": {
+          "type": "string"
+        },
+        "eksternVersjonId": {
+          "type": "string"
+        },
+        "eksternLeveringDato": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "FeltundersType": {
+      "type": "string",
+      "enum": [
+        "10",
+        "20",
+        "30"
+      ]
+    },
+    "GeotekniskFeltUndersMetode": {
+      "type": "string",
+      "enum": [
+        "21",
+        "42",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "61",
+        "63"
+      ]
+    },
+    "GeotekniskMetode": {
+      "type": "string",
+      "enum": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "3",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "4",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "5",
+        "50",
+        "51",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "GrunnvannAkvifer": {
+      "type": "string",
+      "enum": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "GrunnvannObservasjonKode": {
+      "type": "string",
+      "enum": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "HovedLagKlassifiseringsKode": {
+      "type": "string",
+      "enum": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "3",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "4",
+        "40",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "HøydeReferanse": {
+      "type": "string",
+      "enum": [
+        "5776",
+        "5941",
+        "Ukjent"
+      ]
+    },
+    "Identifikasjon": {
+      "type": "object",
+      "properties": {
+        "lokalId": {
+          "type": "string"
+        },
+        "navnerom": {
+          "type": "string"
+        },
+        "versjonId": {
+          "type": "string"
+        }
+      }
+    },
+    "KlassifiseringMetode": {
+      "type": "string",
+      "enum": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "KvikkleirePåvisning": {
+      "type": "string",
+      "enum": [
+        "Antatt",
+        "AntattIkkeKvikk",
+        "IkkeVurdert",
+        "Sikker",
+        "Usikker"
+      ]
+    },
+    "LagPosisjon": {
+      "type": "string",
+      "enum": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "Link": {
+      "type": "object",
+      "properties": {
+        "href": {},
+        "rel": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      }
+    },
+    "Målemetode": {
+      "type": "string",
+      "enum": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "99"
+      ]
+    },
+    "MålemetodeHøyde": {
+      "type": "string",
+      "enum": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "36",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "74",
+        "78",
+        "79",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "99"
+      ]
+    },
+    "NedpressingsKapasitet": {
+      "type": "string",
+      "enum": [
+        "10",
+        "100",
+        "50"
+      ]
+    },
+    "ObservasjonKode": {
+      "type": "string",
+      "enum": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "3",
+        "30",
+        "31",
+        "32",
+        "36",
+        "37",
+        "38",
+        "39",
+        "4",
+        "41",
+        "42",
+        "43",
+        "44",
+        "46",
+        "47",
+        "48",
+        "49",
+        "5",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "6",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "PosisjonskvalitetNADAG": {
+      "type": "object",
+      "properties": {
+        "målemetode": {
+          "$ref": "#/definitions/Målemetode"
+        },
+        "målemetodeHøyde": {
+          "$ref": "#/definitions/MålemetodeHøyde"
+        },
+        "nøyaktighet": {
+          "type": "integer"
+        },
+        "nøyaktighetHøyde": {
+          "type": "integer"
+        }
+      }
+    },
+    "Prøvetype": {
+      "type": "string",
+      "enum": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    "RepresentasjonKvalitet": {
+      "type": "string",
+      "enum": [
+        "0",
+        "10",
+        "20",
+        "30",
+        "40",
+        "42",
+        "45",
+        "50"
+      ]
+    },
+    "SondeKvalitetKlasse": {
+      "type": "string",
+      "enum": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "StoppKode": {
+      "type": "string",
+      "enum": [
+        "0",
+        "88",
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99"
+      ]
+    },
+    "TolkningMetode": {
+      "type": "string",
+      "enum": [
+        "10",
+        "20",
+        "30",
+        "40"
+      ]
+    },
+    "array": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "array",
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}
