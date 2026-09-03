@@ -251,7 +251,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Målemetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -280,7 +280,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>MålemetodeHøyde</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -605,7 +605,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>BorlengdeKvalitet</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -784,7 +784,11 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>HøydeReferanse</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- 5776<br />- 5941<br />- Ukjent</td>
     </tr>
   </tbody>
 </table>
@@ -1080,7 +1084,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>StoppKode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -2484,7 +2488,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Målemetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -2513,7 +2517,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>MålemetodeHøyde</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -2688,7 +2692,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>BorlengdeKvalitet</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -2821,7 +2825,11 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>HøydeReferanse</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- 5776<br />- 5941<br />- Ukjent</td>
     </tr>
   </tbody>
 </table>
@@ -2992,7 +3000,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>KvikkleirePåvisning</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -3690,7 +3698,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Målemetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -3719,7 +3727,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>MålemetodeHøyde</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -3944,7 +3952,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>BorlengdeKvalitet</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -4198,7 +4206,11 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>HøydeReferanse</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- 5776<br />- 5941<br />- Ukjent</td>
     </tr>
   </tbody>
 </table>
@@ -4394,7 +4406,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>GeotekniskMetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -4523,7 +4535,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>StoppKode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -4553,6 +4565,31 @@ Egenskaper
     <tr>
       <th scope="row">Type:</th>
       <td>number</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">Navn:</th>
+      <td><strong>underspkt_fk</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>Fremmednøkkel til geoteknisk borehull.</td>
+    </tr>
+    <tr>
+      <th scope="row">Multiplisitet:</th>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <th scope="row">Type:</th>
+      <td>string</td>
     </tr>
   </tbody>
 </table>
@@ -4960,7 +4997,11 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>DokumentType</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- AssessmentReport<br />- BoreHoleAttachment<br />- DigitizedDwg<br />- DigitizedImage<br />- Drawing<br />- GeoReport<br />- Image<br />- LabReport<br />- Model<br />- NotSpecified<br />- PlanPdf<br />- PlanSymbolImage<br />- ProfileImage<br />- ProfilePdf<br />- RawdataFile</td>
     </tr>
   </tbody>
 </table>
@@ -6004,7 +6045,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>GeotekniskFeltUndersMetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -6183,7 +6224,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>FeltundersType</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -6212,7 +6253,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>TolkningMetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -6291,7 +6332,11 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>HøydeReferanse</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- 5776<br />- 5941<br />- Ukjent</td>
     </tr>
   </tbody>
 </table>
@@ -6631,7 +6676,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Prøvetype</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -7531,7 +7576,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>LagPosisjon</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -8206,7 +8251,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>KlassifiseringMetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -8235,7 +8280,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>HovedLagKlassifiseringsKode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -8614,7 +8659,11 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>HøydeReferanse</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- 5776<br />- 5941<br />- Ukjent</td>
     </tr>
   </tbody>
 </table>
@@ -9035,7 +9084,11 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>HøydeReferanse</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- 5776<br />- 5941<br />- Ukjent</td>
     </tr>
   </tbody>
 </table>
@@ -9106,7 +9159,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Målemetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -9135,7 +9188,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>MålemetodeHøyde</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -10095,7 +10148,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>RepresentasjonKvalitet</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -10981,7 +11034,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>GrunnvannObservasjonKode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -11504,7 +11557,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>GrunnvannAkvifer</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -12003,7 +12056,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Prøvetype</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -12103,7 +12156,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>BorlengdeKvalitet</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -12518,7 +12571,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>BorlengdeKvalitet</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -13434,7 +13487,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Prøvetype</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -13701,7 +13754,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>ObservasjonKode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -15232,7 +15285,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>NedpressingsKapasitet</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -15411,7 +15464,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>SondeKvalitetKlasse</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -17474,7 +17527,7 @@ Egenskaper
 
 ### Kodelister
 
-#### «Enumeration» string
+#### «Enumeration» Målemetode
 
 Koder
 
@@ -17807,6 +17860,213 @@ Koder
       <td></td>
       <td>99</td>
     </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» MålemetodeHøyde
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>79</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>99</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» BorlengdeKvalitet
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td></td>
       <td></td>
@@ -17817,6 +18077,53 @@ Koder
       <td></td>
       <td>2</td>
     </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» HøydeReferanse
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5776</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5941</td>
+    </tr>
+    <tr>
+      <td>Ukjent</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» StoppKode
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td></td>
       <td></td>
@@ -17835,152 +18142,52 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>98</td>
     </tr>
     <tr>
-      <td>Antatt</td>
       <td></td>
       <td></td>
-    </tr>
-    <tr>
-      <td>AntattIkkeKvikk</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>IkkeVurdert</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Sikker</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Usikker</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>16</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>17</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>25</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>26</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>27</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>28</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>29</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>37</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>38</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>39</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>47</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>48</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>49</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>57</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>58</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>59</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>100</td>
+      <td>99</td>
     </tr>
   </tbody>
 </table>
@@ -18027,6 +18234,1452 @@ Koder
       <td></td>
       <td></td>
       <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» KvikkleirePåvisning
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antatt</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AntattIkkeKvikk</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IkkeVurdert</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sikker</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Usikker</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» GeotekniskMetode
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» DokumentType
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AssessmentReport</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BoreHoleAttachment</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DigitizedDwg</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DigitizedImage</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Drawing</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GeoReport</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LabReport</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NotSpecified</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PlanPdf</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PlanSymbolImage</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ProfileImage</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ProfilePdf</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RawdataFile</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» GeotekniskFeltUndersMetode
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>63</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» FeltundersType
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» TolkningMetode
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>40</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» Prøvetype
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» LagPosisjon
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» KlassifiseringMetode
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» HovedLagKlassifiseringsKode
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» RepresentasjonKvalitet
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>50</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» GrunnvannObservasjonKode
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» GrunnvannAkvifer
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» ObservasjonKode
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» NedpressingsKapasitet
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>50</td>
+    </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» SondeKvalitetKlasse
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4</td>
     </tr>
   </tbody>
 </table>

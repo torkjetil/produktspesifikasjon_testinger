@@ -272,12 +272,88 @@
         ],
         "deliveryScope": "Tjeneste"
       }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "GeoPackage: grunnundersokelser-utvidet",
+          "deliveryService": {
+            "serviceEndpoint": "https://raw.githubusercontent.com/torkjetil/produktspesifikasjon_testinger/main/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag/grunnundersokelser-utvidet/grunnundersokelser-utvidet.gpkg",
+            "serviceProperty": {
+              "type": "Fil",
+              "value": "Nedlasting"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GPKG"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "GeoPackage: grunnundersokelser-utvidet_feature_catalogue",
+          "deliveryService": {
+            "serviceEndpoint": "https://raw.githubusercontent.com/torkjetil/produktspesifikasjon_testinger/main/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag/grunnundersokelser-utvidet/grunnundersokelser-utvidet_feature_catalogue.gpkg",
+            "serviceProperty": {
+              "type": "Fil",
+              "value": "Nedlasting"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GPKG"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "GML/XSD-skjema: grunnundersokelser-utvidet",
+          "deliveryService": {
+            "serviceEndpoint": "https://raw.githubusercontent.com/torkjetil/produktspesifikasjon_testinger/main/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag/grunnundersokelser-utvidet/schema/xsd/INPUT/grunnundersokelser-utvidet.xsd",
+            "serviceProperty": {
+              "type": "Fil",
+              "value": "Nedlasting"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "XSD"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "JSON Schema: grunnundersokelser-utvidet",
+          "deliveryService": {
+            "serviceEndpoint": "https://raw.githubusercontent.com/torkjetil/produktspesifikasjon_testinger/main/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag/grunnundersokelser-utvidet/schema/jsonschema/INPUT/grunnundersokelserutvidet/grunnundersokelser-utvidet.json",
+            "serviceProperty": {
+              "type": "Fil",
+              "value": "Nedlasting"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "JSON Schema"
+          }
+        ]
+      }
     }
   ],
   "metadataSection": {
     "metadataStandard": "ISO19115",
     "metadataStandardVersion": "2003",
-    "metadataDate": "2026-08-14",
+    "metadataDate": "2026-09-03",
     "language": "nor",
     "contact": {
       "organizationName": "Norges geologiske undersøkelse",
@@ -291,5 +367,15 @@
       "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
       "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/bf45a463-434d-4b4d-84dc-9325780ab5fb"
     }
-  }
+  },
+  "additionalReferences": [
+    {
+      "title": "Produktark",
+      "href": "https://register.geonorge.no/register/versjoner/produktark/norges-geologiske-undersøkelse/nasjonal-database-for-grunnundersokelser-nadag"
+    },
+    {
+      "title": "Produktside",
+      "href": "https://geo.ngu.no/kart/nadag-avansert/NADAG_Om_tjenesten.pdf"
+    }
+  ]
 }

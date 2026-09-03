@@ -51,7 +51,7 @@ package "Objekttyper" {
     + lenkeTilTileggsinfo [0..1] : CharacterString
     + værforholdVedBoring [0..1] : CharacterString
     + høyde [0..1] : Real
-    + høydeReferanse [0..1] : CharacterString
+    + høydeReferanse [0..1] : HøydeReferanse
     + undersøkelseNr [0..1] : CharacterString
     + eksternIdentifikasjon [0..1] : EksternIdentifikasjon
     + opprettetDato [1..1] : DateTime
@@ -59,7 +59,7 @@ package "Objekttyper" {
     + forboretDiameter [0..1] : Real
     + forboretLengde [0..1] : Real
     + forboringMetode [0..1] : CharacterString
-    + stoppKode [0..1] : CharacterString
+    + stoppKode [0..1] : StoppKode
     + forboretStartLengde [0..1] : Real
     + tilhørerGB [0..1] : Link
     + absoluttverdi [0..1] : Boolean
@@ -113,10 +113,10 @@ package "Objekttyper" {
     + gjennomboretMedium [0..*] : Sequence
     + boreNr [0..1] : CharacterString
     + høyde [0..1] : Real
-    + høydeReferanse [0..1] : CharacterString
+    + høydeReferanse [0..1] : HøydeReferanse
     + opprettetDato [1..1] : DateTime
     + eksternIdentifikasjon [0..1] : EksternIdentifikasjon
-    + kvikkleirePåvisning [0..1] : CharacterString
+    + kvikkleirePåvisning [0..1] : KvikkleirePåvisning
     + opprinneligGeotekniskUndersID [0..1] : CharacterString
     + opphav [0..1] : CharacterString
     + maksBoretLengde [0..1] : Real
@@ -149,17 +149,18 @@ package "Objekttyper" {
     + undersøkelseStart [0..1] : DateTime
     + værforholdVedBoring [0..1] : CharacterString
     + høyde [0..1] : Real
-    + høydeReferanse [0..1] : CharacterString
+    + høydeReferanse [0..1] : HøydeReferanse
     + undersøkelseNr [0..1] : CharacterString
     + eksternIdentifikasjon [0..1] : EksternIdentifikasjon
     + opprettetDato [1..1] : DateTime
-    + geotekniskMetode [1..1] : CharacterString
+    + geotekniskMetode [1..1] : GeotekniskMetode
     + dybdeGrunnvannstand [0..1] : Real
     + forboretDiameter [0..1] : Real
     + forboretLengde [0..1] : Real
     + forboringMetode [0..1] : CharacterString
-    + stoppKode [0..1] : CharacterString
+    + stoppKode [0..1] : StoppKode
     + forboretStartLengde [0..1] : Real
+    + underspkt_fk [0..1] : CharacterString
     + undersPkt [0..1] : Link
     + metode-DynamiskSondering [0..*] : Sequence
     + metode-GeotekniskPrøveserie [0..*] : Sequence
@@ -179,7 +180,7 @@ package "Objekttyper" {
     + lokalid [0..1] : CharacterString
     + dokumentID [0..1] : CharacterString
     + dokumentNøkkel [0..1] : CharacterString
-    + dokumentType [1..1] : CharacterString
+    + dokumentType [1..1] : DokumentType
     + dokumentFilnavn [0..1] : CharacterString
     + dokumentURL [0..1] : CharacterString
     + innholdType [0..1] : CharacterString
@@ -202,14 +203,14 @@ package "Objekttyper" {
   class "1.g) GeotekniskFeltUnders (geometri)" as 1_g__GeotekniskFeltUnders__geometri_ <<featureType>> {
     + lokalid [0..1] : CharacterString
     + identifikasjon [1..1] : Identifikasjon
-    + geotekniskFeltUndersMetode [0..1] : CharacterString
+    + geotekniskFeltUndersMetode [0..1] : GeotekniskFeltUndersMetode
     + eksternidentifikasjon [0..1] : EksternIdentifikasjon
     + opprettetDato [0..1] : DateTime
-    + feltundersType [0..1] : CharacterString
-    + tolkningMetode [0..1] : CharacterString
+    + feltundersType [0..1] : FeltundersType
+    + tolkningMetode [0..1] : TolkningMetode
     + høydeFjell [0..1] : Real
     + høyde [0..1] : Real
-    + høydeReferanse [0..1] : CharacterString
+    + høydeReferanse [0..1] : HøydeReferanse
     + feltundersNr [0..1] : CharacterString
     + tilhørerGU [0..1] : Link
 
@@ -222,7 +223,7 @@ package "Objekttyper" {
     + identifikasjon [1..1] : Identifikasjon
     + fraBorlengde [0..1] : Real
     + tilBorlengde [0..1] : Real
-    + prøvetype [0..1] : CharacterString
+    + prøvetype [0..1] : Prøvetype
     + densitetPrøvetaking [0..1] : Real
     + miljøtekniskUndersøkelse [0..1] : CharacterString
     + prøvegrop [0..1] : Boolean
@@ -250,7 +251,7 @@ package "Objekttyper" {
 
   class "4.b) GeotekniskPrøveseriedelData (måledata)" as 4_b__GeotekniskPr_veseriedelData__m_ledata_ <<featureType>> {
     + lokalid [0..1] : Integer
-    + lagPosisjon [0..1] : CharacterString
+    + lagPosisjon [0..1] : LagPosisjon
     + prøveMetode [0..1] : CharacterString
     + aksielDeformasjon [0..1] : Real
     + skjærfasthetUdrenert [0..1] : Real
@@ -275,8 +276,8 @@ package "Objekttyper" {
   class "1.e) GeotekniskTolketLag (geometri)" as 1_e__GeotekniskTolketLag__geometri_ <<featureType>> {
     + lokalid [0..1] : Integer
     + tolketLagID [0..1] : CharacterString
-    + klassifiseringMetode [0..1] : CharacterString
-    + hovedLagKlassifiseringsKode [0..1] : CharacterString
+    + klassifiseringMetode [0..1] : KlassifiseringMetode
+    + hovedLagKlassifiseringsKode [0..1] : HovedLagKlassifiseringsKode
     + lagBeskrivelse [0..1] : CharacterString
     + tolketAv [0..1] : CharacterString
     + tolketTidspunkt [0..1] : DateTime
@@ -287,7 +288,7 @@ package "Objekttyper" {
     + underTerrengOverflate [0..1] : Boolean
     + eksternIdentifikasjon [0..1] : EksternIdentifikasjon
     + høyde [0..1] : Real
-    + høydeReferanse [0..1] : CharacterString
+    + høydeReferanse [0..1] : HøydeReferanse
     + tilhorertolketpunkt_fk [0..1] : CharacterString
     + tilhørerTolketPunkt [0..1] : Link
 
@@ -302,7 +303,7 @@ package "Objekttyper" {
     + tolketTidspunkt [0..1] : DateTime
     + navn [0..1] : CharacterString
     + høyde [1..1] : Real
-    + høydeReferanse [1..1] : CharacterString
+    + høydeReferanse [1..1] : HøydeReferanse
     + digitaliseringsmålestokk [0..1] : Integer
     + kvalitet [0..1] : PosisjonskvalitetNADAG
     + oppdateringsdato [0..1] : DateTime
@@ -328,7 +329,7 @@ package "Objekttyper" {
     + undersøkelsePeriodeFra [0..1] : DateTime
     + undersøkelsePeriodeTil [0..1] : DateTime
     + eksternIdentifikasjon [0..1] : EksternIdentifikasjon
-    + representasjonKvalitet [0..1] : CharacterString
+    + representasjonKvalitet [0..1] : RepresentasjonKvalitet
     + opprettetDato [1..1] : DateTime
     + prosjektNr [0..1] : CharacterString
     + opphav [0..1] : CharacterString
@@ -356,7 +357,7 @@ package "Objekttyper" {
     + redoks [0..1] : Real
     + turbiditet [0..1] : Real
     + boretLengde [0..1] : Real
-    + grunnvannObservasjonKode [0..1] : CharacterString
+    + grunnvannObservasjonKode [0..1] : GrunnvannObservasjonKode
     + erGyldig [0..1] : Boolean
     + grunnvannmaling [0..1] : CharacterString
     + tilhørerGrunnvannmaling [0..1] : Link
@@ -373,7 +374,7 @@ package "Objekttyper" {
     + filterDyp [0..1] : Real
     + filterLengde [0..1] : Real
     + filterType [0..1] : CharacterString
-    + grunnvannAkvifer [0..1] : CharacterString
+    + grunnvannAkvifer [0..1] : GrunnvannAkvifer
     + rørBunn [0..1] : Real
     + rørTopp [0..1] : Real
     + rørType [0..1] : CharacterString
@@ -386,7 +387,7 @@ package "Objekttyper" {
     + identifikasjon [1..1] : Identifikasjon
     + fraBorlengde [0..1] : Real
     + tilBorlengde [0..1] : Real
-    + prøvetype [0..1] : CharacterString
+    + prøvetype [0..1] : Prøvetype
     + densitetPrøvetaking [0..1] : Real
     + miljøtekniskUndersøkelse [0..1] : CharacterString
     + boretLengdeTilBerg [0..1] : BorlengdeTilBerg
@@ -428,7 +429,7 @@ package "Objekttyper" {
     + identifikasjon [1..1] : Identifikasjon
     + fraBorlengde [0..1] : Real
     + tilBorlengde [0..1] : Real
-    + prøvetype [0..1] : CharacterString
+    + prøvetype [0..1] : Prøvetype
     + densitetPrøvetaking [0..1] : Real
     + miljøtekniskUndersøkelse [0..1] : CharacterString
     + tilhørerGBU [0..1] : Link
@@ -438,7 +439,7 @@ package "Objekttyper" {
     + lokalid [0..*] : Integer
     + boretDybde [0..*] : Real
     + enhetsvekt [0..*] : Real
-    + observasjonKode [0..*] : CharacterString
+    + observasjonKode [0..*] : ObservasjonKode
     + observasjonMerknad [0..*] : CharacterString
     + poretrykk [0..*] : Real
     + boretLengde [1..*] : Real
@@ -488,14 +489,14 @@ package "Objekttyper" {
     + filterType [0..1] : CharacterString
     + initiellSpissmotstand [0..1] : Real
     + metningsMedium [0..1] : CharacterString
-    + nedpressingsKapasitet [0..1] : CharacterString
+    + nedpressingsKapasitet [0..1] : NedpressingsKapasitet
     + nedpressningsHastighet [0..1] : Real
     + nullpunktsKorreksjon [0..1] : Real
     + rørKappeKorreksjonsFaktor [0..1] : Real
     + sidefriksjonKorreksjon [0..1] : Real
     + sondeIdentifikasjon [0..1] : CharacterString
     + sondeKalibreringDato [0..1] : DateTime
-    + sondeKvalitetKlasse [0..1] : CharacterString
+    + sondeKvalitetKlasse [0..1] : SondeKvalitetKlasse
     + spissKorreksjonFaktor [0..1] : Real
     + spissType [0..1] : CharacterString
     + atmosferiskTrykkKorreksjon [0..1] : Real
@@ -569,14 +570,14 @@ package "Objekttyper" {
   }
 
   class PosisjonskvalitetNADAG <<dataType>> {
-    + målemetode [0..1] : CharacterString
-    + målemetodeHøyde [0..1] : CharacterString
+    + målemetode [0..1] : Målemetode
+    + målemetodeHøyde [0..1] : MålemetodeHøyde
     + nøyaktighet [0..1] : Integer
     + nøyaktighetHøyde [0..1] : Integer
   }
 
   class BorlengdeTilBerg <<dataType>> {
-    + borlengdeKvalitet [0..1] : CharacterString
+    + borlengdeKvalitet [0..1] : BorlengdeKvalitet
     + borlengdeTilBerg [0..1] : Real
   }
 

@@ -151,6 +151,10 @@ Fra og med 2025 er det lovfestet plikt for innmelding av geotekniske grunnunders
 | OGC API-Features | [Lenke](https://geo.ngu.no/api/features/grunnundersokelser_utvidet) | OGC:API-Features | JSON, GeoJSON | landsfiler |
 | Atom Feed | [Lenke](https://nedlasting.ngu.no/api/atom/bf45a463-434d-4b4d-84dc-9325780ab5fb) | W3C:AtomFeed | FGDB, GML |  |
 | NADAG WMS | [Lenke](https://geo.ngu.no/geoserver/nadag/ows?request=GetCapabilities&service=WMS&version=1.3.0) | WMS-tjeneste | WMS-tjeneste |  |
+| GeoPackage: grunnundersokelser-utvidet | [Lenke](https://raw.githubusercontent.com/torkjetil/produktspesifikasjon_testinger/main/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag/grunnundersokelser-utvidet/grunnundersokelser-utvidet.gpkg) | Nedlasting | GPKG |  |
+| GeoPackage: grunnundersokelser-utvidet_feature_catalogue | [Lenke](https://raw.githubusercontent.com/torkjetil/produktspesifikasjon_testinger/main/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag/grunnundersokelser-utvidet/grunnundersokelser-utvidet_feature_catalogue.gpkg) | Nedlasting | GPKG |  |
+| GML/XSD-skjema: grunnundersokelser-utvidet | [Lenke](https://raw.githubusercontent.com/torkjetil/produktspesifikasjon_testinger/main/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag/grunnundersokelser-utvidet/schema/xsd/INPUT/grunnundersokelser-utvidet.xsd) | Nedlasting | XSD |  |
+| JSON Schema: grunnundersokelser-utvidet | [Lenke](https://raw.githubusercontent.com/torkjetil/produktspesifikasjon_testinger/main/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag/grunnundersokelser-utvidet/schema/jsonschema/INPUT/grunnundersokelserutvidet/grunnundersokelser-utvidet.json) | Nedlasting | JSON Schema |  |
 
 ## Metadata
 
@@ -158,7 +162,7 @@ Fra og med 2025 er det lovfestet plikt for innmelding av geotekniske grunnunders
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-08-14
+**Metadatadato**: 2026-09-03
 
 **språk**: nor
 
@@ -179,3 +183,6 @@ Fra og med 2025 er det lovfestet plikt for innmelding av geotekniske grunnunders
 ## Tilleggsinformasjon
 
 Nedlastingen via Geonorge gjelder enkle datasett, dvs. primært metadata og URL-lenker til rapporter. Komplette data må lastes ned gjennom NADAGs kartinnsyn.
+
+- **Produktark:** [https://register.geonorge.no/register/versjoner/produktark/norges-geologiske-undersøkelse/nasjonal-database-for-grunnundersokelser-nadag](https://register.geonorge.no/register/versjoner/produktark/norges-geologiske-undersøkelse/nasjonal-database-for-grunnundersokelser-nadag)
+- **Produktside:** [https://geo.ngu.no/kart/nadag-avansert/NADAG_Om_tjenesten.pdf](https://geo.ngu.no/kart/nadag-avansert/NADAG_Om_tjenesten.pdf)

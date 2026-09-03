@@ -66,7 +66,7 @@
         "attributes": [
           {
             "name": "målemetode",
-            "type": "string",
+            "type": "Målemetode",
             "cardinality": "0..1",
             "description": "Metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss",
             "valueDomain": {
@@ -333,7 +333,7 @@
           },
           {
             "name": "målemetodeHøyde",
-            "type": "string",
+            "type": "MålemetodeHøyde",
             "cardinality": "0..1",
             "description": "Metode for å måle høyden",
             "valueDomain": {
@@ -557,7 +557,7 @@
         "attributes": [
           {
             "name": "borlengdeKvalitet",
-            "type": "string",
+            "type": "BorlengdeKvalitet",
             "cardinality": "0..1",
             "description": "Beskriver om dybden til berg er antatt eller påvist med en sikker metode<br/><engelsk style=\"font-style:italic;font-size:smaller\"> <br/>Defines the quality of the depth information either assumed or confirmed by a secure method<br/></engelsk>",
             "valueDomain": {
@@ -614,9 +614,26 @@
       },
       {
         "name": "høydeReferanse",
-        "type": "string",
+        "type": "HøydeReferanse",
         "cardinality": "0..1",
-        "description": "Referansesystem for høydeangivelse, som EPSG-kode."
+        "description": "Referansesystem for høydeangivelse, som EPSG-kode.",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "5776",
+              "label": "5776"
+            },
+            {
+              "value": "5941",
+              "label": "5941"
+            },
+            {
+              "value": "Ukjent",
+              "label": "Ukjent"
+            }
+          ]
+        }
       },
       {
         "name": "undersøkelseNr",
@@ -687,7 +704,7 @@
       },
       {
         "name": "stoppKode",
-        "type": "string",
+        "type": "StoppKode",
         "cardinality": "0..1",
         "description": "Tosifret tall som benyttes for å angi årsak til avslutning av borehullundersøkelse<br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">Code used to explain the reason for termination of a borehole investigation<br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">",
         "valueDomain": {
@@ -1112,7 +1129,7 @@
         "attributes": [
           {
             "name": "målemetode",
-            "type": "string",
+            "type": "Målemetode",
             "cardinality": "0..1",
             "description": "Metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss",
             "valueDomain": {
@@ -1379,7 +1396,7 @@
           },
           {
             "name": "målemetodeHøyde",
-            "type": "string",
+            "type": "MålemetodeHøyde",
             "cardinality": "0..1",
             "description": "Metode for å måle høyden",
             "valueDomain": {
@@ -1567,7 +1584,7 @@
         "attributes": [
           {
             "name": "borlengdeKvalitet",
-            "type": "string",
+            "type": "BorlengdeKvalitet",
             "cardinality": "0..1",
             "description": "Beskriver om dybden til berg er antatt eller påvist med en sikker metode<br/><engelsk style=\"font-style:italic;font-size:smaller\"> <br/>Defines the quality of the depth information either assumed or confirmed by a secure method<br/></engelsk>",
             "valueDomain": {
@@ -1641,9 +1658,26 @@
       },
       {
         "name": "høydeReferanse",
-        "type": "string",
+        "type": "HøydeReferanse",
         "cardinality": "0..1",
-        "description": "Referansesystem for høydeangivelse, som EPSG-kode."
+        "description": "Referansesystem for høydeangivelse, som EPSG-kode.",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "5776",
+              "label": "5776"
+            },
+            {
+              "value": "5941",
+              "label": "5941"
+            },
+            {
+              "value": "Ukjent",
+              "label": "Ukjent"
+            }
+          ]
+        }
       },
       {
         "name": "opprettetDato",
@@ -1684,7 +1718,7 @@
       },
       {
         "name": "kvikkleirePåvisning",
-        "type": "string",
+        "type": "KvikkleirePåvisning",
         "cardinality": "0..1",
         "description": "Grad av sikkerhet for påvisning av kvikkleire (omrørt skjærfasthet mindre eller lik 0,5 kPa) eller sprøbruddmateriale (omrørt skjærfasthet mindre enn 2 kPa)",
         "valueDomain": {
@@ -1894,7 +1928,7 @@
         "attributes": [
           {
             "name": "målemetode",
-            "type": "string",
+            "type": "Målemetode",
             "cardinality": "0..1",
             "description": "Metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss",
             "valueDomain": {
@@ -2161,7 +2195,7 @@
           },
           {
             "name": "målemetodeHøyde",
-            "type": "string",
+            "type": "MålemetodeHøyde",
             "cardinality": "0..1",
             "description": "Metode for å måle høyden",
             "valueDomain": {
@@ -2361,7 +2395,7 @@
         "attributes": [
           {
             "name": "borlengdeKvalitet",
-            "type": "string",
+            "type": "BorlengdeKvalitet",
             "cardinality": "0..1",
             "description": "Beskriver om dybden til berg er antatt eller påvist med en sikker metode<br/><engelsk style=\"font-style:italic;font-size:smaller\"> <br/>Defines the quality of the depth information either assumed or confirmed by a secure method<br/></engelsk>",
             "valueDomain": {
@@ -2436,9 +2470,26 @@
       },
       {
         "name": "høydeReferanse",
-        "type": "string",
+        "type": "HøydeReferanse",
         "cardinality": "0..1",
-        "description": "Referansesystem for høydeangivelse, som EPSG-kode."
+        "description": "Referansesystem for høydeangivelse, som EPSG-kode.",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "5776",
+              "label": "5776"
+            },
+            {
+              "value": "5941",
+              "label": "5941"
+            },
+            {
+              "value": "Ukjent",
+              "label": "Ukjent"
+            }
+          ]
+        }
       },
       {
         "name": "undersøkelseNr",
@@ -2485,7 +2536,7 @@
       },
       {
         "name": "geotekniskMetode",
-        "type": "string",
+        "type": "GeotekniskMetode",
         "cardinality": "1..1",
         "description": "Metoder benyttet ved geotekniske borehullundersøkelser",
         "valueDomain": {
@@ -2724,7 +2775,7 @@
       },
       {
         "name": "stoppKode",
-        "type": "string",
+        "type": "StoppKode",
         "cardinality": "0..1",
         "description": "Tosifret tall som benyttes for å angi årsak til avslutning av borehullundersøkelse<br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">Code used to explain the reason for termination of a borehole investigation<br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">",
         "valueDomain": {
@@ -2790,6 +2841,12 @@
         "type": "number",
         "cardinality": "0..1",
         "description": "Startlengde[m] for hvor forboring startet i en borhullundersøkelse <br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">Start depth[m] where the predrilling in the  borehole investigation started<br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">"
+      },
+      {
+        "name": "underspkt_fk",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "Fremmednøkkel til geoteknisk borehull."
       },
       {
         "name": "undersPkt",
@@ -2892,9 +2949,74 @@
       },
       {
         "name": "dokumentType",
-        "type": "string",
+        "type": "DokumentType",
         "cardinality": "1..1",
-        "description": "Type dokument. Feks. Geoteknisk rapport, Profilbilde"
+        "description": "Type dokument. Feks. Geoteknisk rapport, Profilbilde",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "AssessmentReport",
+              "label": "AssessmentReport"
+            },
+            {
+              "value": "BoreHoleAttachment",
+              "label": "BoreHoleAttachment"
+            },
+            {
+              "value": "DigitizedDwg",
+              "label": "DigitizedDwg"
+            },
+            {
+              "value": "DigitizedImage",
+              "label": "DigitizedImage"
+            },
+            {
+              "value": "Drawing",
+              "label": "Drawing"
+            },
+            {
+              "value": "GeoReport",
+              "label": "GeoReport"
+            },
+            {
+              "value": "Image",
+              "label": "Image"
+            },
+            {
+              "value": "LabReport",
+              "label": "LabReport"
+            },
+            {
+              "value": "Model",
+              "label": "Model"
+            },
+            {
+              "value": "NotSpecified",
+              "label": "NotSpecified"
+            },
+            {
+              "value": "PlanPdf",
+              "label": "PlanPdf"
+            },
+            {
+              "value": "PlanSymbolImage",
+              "label": "PlanSymbolImage"
+            },
+            {
+              "value": "ProfileImage",
+              "label": "ProfileImage"
+            },
+            {
+              "value": "ProfilePdf",
+              "label": "ProfilePdf"
+            },
+            {
+              "value": "RawdataFile",
+              "label": "RawdataFile"
+            }
+          ]
+        }
       },
       {
         "name": "dokumentFilnavn",
@@ -3163,7 +3285,7 @@
       },
       {
         "name": "geotekniskFeltUndersMetode",
-        "type": "string",
+        "type": "GeotekniskFeltUndersMetode",
         "cardinality": "0..1",
         "description": "Metoder benyttet ved geotekniske feltundersøkelser",
         "valueDomain": {
@@ -3248,7 +3370,7 @@
       },
       {
         "name": "feltundersType",
-        "type": "string",
+        "type": "FeltundersType",
         "cardinality": "0..1",
         "description": "feltundersType",
         "valueDomain": {
@@ -3271,7 +3393,7 @@
       },
       {
         "name": "tolkningMetode",
-        "type": "string",
+        "type": "TolkningMetode",
         "cardinality": "0..1",
         "description": "Metoder benyttet for tolkning av geotekniske feltundersøkelser",
         "valueDomain": {
@@ -3310,9 +3432,26 @@
       },
       {
         "name": "høydeReferanse",
-        "type": "string",
+        "type": "HøydeReferanse",
         "cardinality": "0..1",
-        "description": "Referansesystem for høydeangivelse, som EPSG-kode."
+        "description": "Referansesystem for høydeangivelse, som EPSG-kode.",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "5776",
+              "label": "5776"
+            },
+            {
+              "value": "5941",
+              "label": "5941"
+            },
+            {
+              "value": "Ukjent",
+              "label": "Ukjent"
+            }
+          ]
+        }
       },
       {
         "name": "feltundersNr",
@@ -3401,7 +3540,7 @@
       },
       {
         "name": "prøvetype",
-        "type": "string",
+        "type": "Prøvetype",
         "cardinality": "0..1",
         "description": "Klassifisering av fysisk prøvemateriale, avhengig av type prøvetaking og jordart<br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">Classification of sampled material, depending on type of sampling and soil type</engelsk>",
         "valueDomain": {
@@ -3664,7 +3803,7 @@
       },
       {
         "name": "lagPosisjon",
-        "type": "string",
+        "type": "LagPosisjon",
         "cardinality": "0..1",
         "description": "I hvilken del av prøvedelen som det er gjort undersøkelser",
         "valueDomain": {
@@ -3857,7 +3996,7 @@
       },
       {
         "name": "klassifiseringMetode",
-        "type": "string",
+        "type": "KlassifiseringMetode",
         "cardinality": "0..1",
         "description": "Oversikt over klassifiseringsmetoder for bestemmelse av grunnforhold",
         "valueDomain": {
@@ -3904,7 +4043,7 @@
       },
       {
         "name": "hovedLagKlassifiseringsKode",
-        "type": "string",
+        "type": "HovedLagKlassifiseringsKode",
         "cardinality": "0..1",
         "description": "Oversikt over lagdeling og jordart for klassifisering og identifisering av grunnforhold",
         "valueDomain": {
@@ -4165,9 +4304,26 @@
       },
       {
         "name": "høydeReferanse",
-        "type": "string",
+        "type": "HøydeReferanse",
         "cardinality": "0..1",
-        "description": "Referansesystem for høydeangivelse, som EPSG-kode."
+        "description": "Referansesystem for høydeangivelse, som EPSG-kode.",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "5776",
+              "label": "5776"
+            },
+            {
+              "value": "5941",
+              "label": "5941"
+            },
+            {
+              "value": "Ukjent",
+              "label": "Ukjent"
+            }
+          ]
+        }
       },
       {
         "name": "tilhorertolketpunkt_fk",
@@ -4279,9 +4435,26 @@
       },
       {
         "name": "høydeReferanse",
-        "type": "string",
+        "type": "HøydeReferanse",
         "cardinality": "1..1",
-        "description": "Referansesystem for høydeangivelse, som EPSG-kode."
+        "description": "Referansesystem for høydeangivelse, som EPSG-kode.",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "5776",
+              "label": "5776"
+            },
+            {
+              "value": "5941",
+              "label": "5941"
+            },
+            {
+              "value": "Ukjent",
+              "label": "Ukjent"
+            }
+          ]
+        }
       },
       {
         "name": "digitaliseringsmålestokk",
@@ -4296,7 +4469,7 @@
         "attributes": [
           {
             "name": "målemetode",
-            "type": "string",
+            "type": "Målemetode",
             "cardinality": "0..1",
             "description": "Metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss",
             "valueDomain": {
@@ -4563,7 +4736,7 @@
           },
           {
             "name": "målemetodeHøyde",
-            "type": "string",
+            "type": "MålemetodeHøyde",
             "cardinality": "0..1",
             "description": "Metode for å måle høyden",
             "valueDomain": {
@@ -4958,7 +5131,7 @@
       },
       {
         "name": "representasjonKvalitet",
-        "type": "string",
+        "type": "RepresentasjonKvalitet",
         "cardinality": "0..1",
         "description": "Angir hva avgrensningen/polygonen for en geoteknisk undersøkelse fysisk representerer.",
         "valueDomain": {
@@ -5220,7 +5393,7 @@
       },
       {
         "name": "grunnvannObservasjonKode",
-        "type": "string",
+        "type": "GrunnvannObservasjonKode",
         "cardinality": "0..1",
         "description": "Observasjonskoder for grunnvann",
         "valueDomain": {
@@ -5399,7 +5572,7 @@
       },
       {
         "name": "grunnvannAkvifer",
-        "type": "string",
+        "type": "GrunnvannAkvifer",
         "cardinality": "0..1",
         "description": "Type og størrelse av grunnvannsreservoir<br/><engelsk style=\"font-style:italic;font-size:smaller\">Type and size of groundwater reservoir</engelsk>",
         "valueDomain": {
@@ -5554,7 +5727,7 @@
       },
       {
         "name": "prøvetype",
-        "type": "string",
+        "type": "Prøvetype",
         "cardinality": "0..1",
         "description": "Klassifisering av fysisk prøvemateriale, avhengig av type prøvetaking og jordart<br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">Classification of sampled material, depending on type of sampling and soil type</engelsk>",
         "valueDomain": {
@@ -5606,7 +5779,7 @@
         "attributes": [
           {
             "name": "borlengdeKvalitet",
-            "type": "string",
+            "type": "BorlengdeKvalitet",
             "cardinality": "0..1",
             "description": "Beskriver om dybden til berg er antatt eller påvist med en sikker metode<br/><engelsk style=\"font-style:italic;font-size:smaller\"> <br/>Defines the quality of the depth information either assumed or confirmed by a secure method<br/></engelsk>",
             "valueDomain": {
@@ -5729,7 +5902,7 @@
         "attributes": [
           {
             "name": "borlengdeKvalitet",
-            "type": "string",
+            "type": "BorlengdeKvalitet",
             "cardinality": "0..1",
             "description": "Beskriver om dybden til berg er antatt eller påvist med en sikker metode<br/><engelsk style=\"font-style:italic;font-size:smaller\"> <br/>Defines the quality of the depth information either assumed or confirmed by a secure method<br/></engelsk>",
             "valueDomain": {
@@ -5982,7 +6155,7 @@
       },
       {
         "name": "prøvetype",
-        "type": "string",
+        "type": "Prøvetype",
         "cardinality": "0..1",
         "description": "Klassifisering av fysisk prøvemateriale, avhengig av type prøvetaking og jordart<br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">Classification of sampled material, depending on type of sampling and soil type</engelsk>",
         "valueDomain": {
@@ -6083,7 +6256,7 @@
       },
       {
         "name": "observasjonKode",
-        "type": "string",
+        "type": "ObservasjonKode",
         "cardinality": "0..*",
         "description": "Observasjonskoder for markering av hendelser i poretrykksmålingen. Kodene er [0..*] tallkoder gitt i en tekststreng med mellomrom mellom hver kode hvis mer enn 1. Kodene er beskrevet i kodelisten GeotekniskBoreObservasjonskode. <br/><engelsk style='font-style:italic;font-size:smaller'>Observation codes for marking of incidents during pore pressure measurements. The codes are [0..*] numeric codes given in a text string with spaces between each code if more than 1. The codes are described in the code list GeotekniskBoreObservasjonskode. </engelsk>",
         "valueDomain": {
@@ -6727,7 +6900,7 @@
       },
       {
         "name": "nedpressingsKapasitet",
-        "type": "string",
+        "type": "NedpressingsKapasitet",
         "cardinality": "0..1",
         "description": "Kapasitet for anvendt nedpressingsutstyr [kN] <br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">Capacity for applied thrust machine</engelsk>",
         "valueDomain": {
@@ -6786,7 +6959,7 @@
       },
       {
         "name": "sondeKvalitetKlasse",
-        "type": "string",
+        "type": "SondeKvalitetKlasse",
         "cardinality": "0..1",
         "description": "Kvalitetsklasse for målenøyaktighet for en trykksonde ved gjennomføring av anbefalt prøvingsprosedyre <br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">Application class for test accuracy for test performance according to a recommended test procedure</engelsk>",
         "valueDomain": {
