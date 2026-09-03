@@ -1,0 +1,8 @@
+---
+label: VannPrøveKilde
+entries:
+  Grunnvann: Grunnvann
+  Overflatevann: Overflatevann
+  Porevann: Porevann
+  Sigevann: Sigevann
+sourceType: TEMPLATES

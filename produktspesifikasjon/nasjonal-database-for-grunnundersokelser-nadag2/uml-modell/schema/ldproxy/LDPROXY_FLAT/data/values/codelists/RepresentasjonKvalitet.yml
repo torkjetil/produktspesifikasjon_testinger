@@ -1,0 +1,12 @@
+---
+label: RepresentasjonKvalitet
+entries:
+  Polygon for GU med kun et enkelt borehull (100x100m): Polygon for GU med kun et enkelt borehull (100x100m)
+  Polygon hentet  fra borehull i GU, min og  maks koordinater.: "Polygon hentet  fra borehull i GU, min og  maks koordinater."
+  Polygon som avgrenser borehull i GU.: Polygon som avgrenser borehull i GU.
+  Polygon som representerer prosjektområde.: Polygon som representerer prosjektområde.
+  Representasjonspunkt for kommunalt/regionalt GU-område.: Representasjonspunkt for kommunalt/regionalt GU-område.
+  Representasjonspunkt for mindre GU-område. Opptil ca. 10 mål.: Representasjonspunkt for mindre GU-område. Opptil ca. 10 mål.
+  Representasjonspunkt for større GU-område. Over ca. 10 mål, eller lengre enn ca. 0,5 km: "Representasjonspunkt for større GU-område. Over ca. 10 mål, eller lengre enn ca. 0,5 km"
+  Ukjent: Ukjent
+sourceType: TEMPLATES

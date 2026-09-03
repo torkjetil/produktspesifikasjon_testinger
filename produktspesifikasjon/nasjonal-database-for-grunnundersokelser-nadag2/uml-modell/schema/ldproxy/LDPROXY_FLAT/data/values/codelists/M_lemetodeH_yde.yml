@@ -1,0 +1,39 @@
+---
+label: MålemetodeHøyde
+entries:
+  Aerotriangulert: Aerotriangulert
+  Analytisk plotter: Analytisk plotter
+  Annet: Annet
+  Annet (spesifiseres i filhode): Annet (spesifiseres i filhode)
+  Autograf - vanlig registrering: Autograf - vanlig registrering
+  Beregnet (?): Beregnet (?)
+  Digitalt stereoinstrument: Digitalt stereoinstrument
+  Fastsatt ved dom eller kongelig resolusjon: Fastsatt ved dom eller kongelig resolusjon
+  Flybåren laserscanning: Flybåren laserscanning
+  GPS Fasemåling RTK: GPS Fasemåling RTK
+  GPS Fasemåling, andre metoder: "GPS Fasemåling, andre metoder"
+  GPS Fasemåling, statisk måling.: "GPS Fasemåling, statisk måling."
+  GPS Kodemåling, enkeltpunktbestemmelser: "GPS Kodemåling, enkeltpunktbestemmelser"
+  GPS Kodemåling, relative målinger.: "GPS Kodemåling, relative målinger."
+  Generalisert: Generalisert
+  Generert i terrengmodell: Generert i terrengmodell
+  Generert sirkelgeometri: Generert sirkelgeometri
+  Genererte data (interpolasjon): Genererte data (interpolasjon)
+  Kombinasjon av GPS/Treghet: Kombinasjon av GPS/Treghet
+  Koordinater hentet fra GAB: Koordinater hentet fra GAB
+  Koordinater hentet fra JREG (?): Koordinater hentet fra JREG (?)
+  Målt med stigningsmåler: Målt med stigningsmåler
+  Nivellement: Nivellement
+  Ortogonalmetoden: Ortogonalmetoden
+  Sammenknytningspunkt/randpunkt: Sammenknytningspunkt/randpunkt
+  Spesielle metoder: Spesielle metoder
+  Stereoinstrument: Stereoinstrument
+  Tatt fra plan: Tatt fra plan
+  Teodolitt med elektronisk avstandsmåler: Teodolitt med elektronisk avstandsmåler
+  Teodolitt med målebånd: Teodolitt med målebånd
+  Terrengmålt: Terrengmålt
+  Totalstasjon: Totalstasjon
+  Treghetsstedfesting: Treghetsstedfesting
+  Ukjent målemetode: Ukjent målemetode
+  Vektet middel: Vektet middel
+sourceType: TEMPLATES

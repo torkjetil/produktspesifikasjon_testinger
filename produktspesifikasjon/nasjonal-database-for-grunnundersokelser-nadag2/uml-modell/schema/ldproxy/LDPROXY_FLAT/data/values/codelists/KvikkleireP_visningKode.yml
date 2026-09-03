@@ -1,0 +1,9 @@
+---
+label: KvikkleirePåvisningKode
+entries:
+  Antatt: Antatt
+  AntattIkkeKvikk: AntattIkkeKvikk
+  IkkeVurdert: IkkeVurdert
+  Sikker: Sikker
+  Usikker: Usikker
+sourceType: TEMPLATES

@@ -1,0 +1,147 @@
+---
+id: uml_modell
+label: FIXME
+description: FIXME
+enabled: true
+serviceType: OGC_API
+collections:
+  blokkprøve:
+    id: blokkprøve
+    label: blokkprøve
+    enabled: true
+  deformasjonmåling:
+    id: deformasjonmåling
+    label: deformasjonmåling
+    enabled: true
+  dilatometertest:
+    id: dilatometertest
+    label: dilatometertest
+    enabled: true
+  dynamisksondering:
+    id: dynamisksondering
+    label: dynamisksondering
+    enabled: true
+  gassmåling:
+    id: gassmåling
+    label: gassmåling
+    enabled: true
+  gassprøve:
+    id: gassprøve
+    label: gassprøve
+    enabled: true
+  geotekniskborehull:
+    id: geotekniskborehull
+    label: geotekniskborehull
+    enabled: true
+  geotekniskborehullunders:
+    id: geotekniskborehullunders
+    label: geotekniskborehullunders
+    enabled: true
+  geotekniskdokument:
+    id: geotekniskdokument
+    label: geotekniskdokument
+    enabled: true
+  geotekniskfeltunders:
+    id: geotekniskfeltunders
+    label: geotekniskfeltunders
+    enabled: true
+  geotekniskprøveserie:
+    id: geotekniskprøveserie
+    label: geotekniskprøveserie
+    enabled: true
+  geotekniskprøveseriedel:
+    id: geotekniskprøveseriedel
+    label: geotekniskprøveseriedel
+    enabled: true
+  geoteknisktolketlag:
+    id: geoteknisktolketlag
+    label: geoteknisktolketlag
+    enabled: true
+  geoteknisktolketpunkt:
+    id: geoteknisktolketpunkt
+    label: geoteknisktolketpunkt
+    enabled: true
+  geotekniskunders:
+    id: geotekniskunders
+    label: geotekniskunders
+    enabled: true
+  geotekniskundersøkelsegrense:
+    id: geotekniskundersøkelsegrense
+    label: geotekniskundersøkelsegrense
+    enabled: true
+  graveprøve:
+    id: graveprøve
+    label: graveprøve
+    enabled: true
+  grunnvannmåling:
+    id: grunnvannmåling
+    label: grunnvannmåling
+    enabled: true
+  hydraulisktest:
+    id: hydraulisktest
+    label: hydraulisktest
+    enabled: true
+  kanneprøve:
+    id: kanneprøve
+    label: kanneprøve
+    enabled: true
+  kjerneboring:
+    id: kjerneboring
+    label: kjerneboring
+    enabled: true
+  kjerneprøve:
+    id: kjerneprøve
+    label: kjerneprøve
+    enabled: true
+  kombinasjonsondering:
+    id: kombinasjonsondering
+    label: kombinasjonsondering
+    enabled: true
+  miljøundersøkelse:
+    id: miljøundersøkelse
+    label: miljøundersøkelse
+    enabled: true
+  naverprøve:
+    id: naverprøve
+    label: naverprøve
+    enabled: true
+  platebelastning:
+    id: platebelastning
+    label: platebelastning
+    enabled: true
+  poretrykkmåling:
+    id: poretrykkmåling
+    label: poretrykkmåling
+    enabled: true
+  ramprøve:
+    id: ramprøve
+    label: ramprøve
+    enabled: true
+  sedimentprøve:
+    id: sedimentprøve
+    label: sedimentprøve
+    enabled: true
+  skovlprøve:
+    id: skovlprøve
+    label: skovlprøve
+    enabled: true
+  statisksondering:
+    id: statisksondering
+    label: statisksondering
+    enabled: true
+  stempelprøve:
+    id: stempelprøve
+    label: stempelprøve
+    enabled: true
+  trykksondering:
+    id: trykksondering
+    label: trykksondering
+    enabled: true
+  vannprøve:
+    id: vannprøve
+    label: vannprøve
+    enabled: true
+  vingeboring:
+    id: vingeboring
+    label: vingeboring
+    enabled: true

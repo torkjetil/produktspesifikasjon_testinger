@@ -1,0 +1,10 @@
+---
+label: PrøvetakingType
+entries:
+  Blokk: Blokk
+  Plastrør: Plastrør
+  Poseprøve: Poseprøve
+  Ren flaske: Ren flaske
+  Steril flaske: Steril flaske
+  Sylinder: Sylinder
+sourceType: TEMPLATES

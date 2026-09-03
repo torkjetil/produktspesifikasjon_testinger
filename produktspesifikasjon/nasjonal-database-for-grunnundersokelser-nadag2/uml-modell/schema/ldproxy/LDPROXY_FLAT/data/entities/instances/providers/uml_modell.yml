@@ -1,0 +1,1169 @@
+---
+id: uml_modell
+enabled: true
+providerType: FEATURE
+providerSubType: SQL
+nativeCrs:
+  code: 25833
+  forceAxisOrder: NONE
+nativeTimeZone: Europe/Oslo
+connectionInfo:
+  database: FIXME
+  host: FIXME
+  user: FIXME
+  password: FIXME-base64-encoded
+  schemas:
+  - public
+sourcePathDefaults:
+  primaryKey: objid
+  sortKey: objid
+types:
+  blokkprøve:
+    sourcePath: /blokkprøve
+    type: OBJECT
+    objectType: BlokkPrøve
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+  deformasjonmåling:
+    sourcePath: /deformasjonmåling
+    type: OBJECT
+    objectType: DeformasjonMåling
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      absoluttverdi:
+        sourcePath: absoluttverdi
+        type: BOOLEAN
+      installasjonNivå:
+        sourcePath: installasjonnivå
+        type: FLOAT
+      installasjonTidspunkt:
+        sourcePath: installasjontidspunkt
+        type: DATE
+        role: PRIMARY_INSTANT
+      målepunkt:
+        sourcePath: målepunkt
+        type: FLOAT
+      målertype:
+        sourcePath: målertype
+        type: STRING
+  dilatometertest:
+    sourcePath: /dilatometertest
+    type: OBJECT
+    objectType: DilatometerTest
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      dilatometerModulus:
+        sourcePath: dilatometermodulus
+        type: FLOAT
+      horisontalSpenningIndeks:
+        sourcePath: horisontalspenningindeks
+        type: FLOAT
+      materialIndeks:
+        sourcePath: materialindeks
+        type: FLOAT
+  dynamisksondering:
+    sourcePath: /dynamisksondering
+    type: OBJECT
+    objectType: DynamiskSondering
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      antPrøveuttakForstyrretMatr:
+        sourcePath: antprøveuttakforstyrretmatr
+        type: INTEGER
+  gassmåling:
+    sourcePath: /gassmåling
+    type: OBJECT
+    objectType: GassMåling
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      byggNummer:
+        sourcePath: byggnummer
+        type: STRING
+      plassering:
+        sourcePath: plassering
+        type: STRING
+  gassprøve:
+    sourcePath: /gassprøve
+    type: OBJECT
+    objectType: GassPrøve
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+  geotekniskborehull:
+    sourcePath: /geotekniskborehull
+    type: OBJECT
+    objectType: GeotekniskBorehull
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      boreNr:
+        sourcePath: borenr
+        type: STRING
+      eksternIdentifikasjon_eksternId:
+        sourcePath: eksternidentifikasjon_eksternid
+        type: STRING
+      eksternIdentifikasjon_eksternLeveringDato:
+        sourcePath: eksternidentifikasjon_eksternleveringdato
+        type: DATE
+        role: PRIMARY_INSTANT
+      eksternIdentifikasjon_eksternNavnerom:
+        sourcePath: eksternidentifikasjon_eksternnavnerom
+        type: STRING
+      eksternIdentifikasjon_eksternVersjonId:
+        sourcePath: eksternidentifikasjon_eksternversjonid
+        type: STRING
+      høyde:
+        sourcePath: høyde
+        type: FLOAT
+      høydeReferanse:
+        sourcePath: høydereferanse
+        type: STRING
+        constraints:
+          codelist: NADAG_H_yderef
+      kvikkleirePåvisning:
+        sourcePath: kvikkleirepåvisning
+        type: STRING
+        constraints:
+          codelist: KvikkleireP_visningKode
+      maksBoretLengde:
+        sourcePath: maksboretlengde
+        type: FLOAT
+      opphav:
+        sourcePath: opphav
+        type: STRING
+      opprettetDato:
+        sourcePath: opprettetdato
+        type: DATE
+        constraints:
+          required: true
+      opprinneligGeotekniskUndersID:
+        sourcePath: opprinneliggeotekniskundersid
+        type: STRING
+      harUndersøkelse:
+        sourcePath: "[objid=geotekniskborehullobjid]GeotekniskBorehull_harUndersøkelse/[geotekniskborehullundersobjid=objid]geotekniskborehullunders"
+        type: OBJECT_ARRAY
+        objectType: Link
+        constraints:
+          minOccurrence: 0
+        properties:
+          title:
+            sourcePath: objid
+            type: STRING
+            label: GeotekniskBorehullUnders-title
+          href:
+            sourcePath: objid
+            type: STRING
+            label: GeotekniskBorehullUnders-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskborehullunders/items/{{value}}"
+      undersOmr:
+        sourcePath: "[objid=geotekniskborehullobjid]GeotekniskBorehull_undersOmr/[geotekniskundersobjid=objid]geotekniskunders"
+        type: OBJECT_ARRAY
+        objectType: Link
+        constraints:
+          minOccurrence: 0
+        properties:
+          title:
+            sourcePath: objid
+            type: STRING
+            label: GeotekniskUnders-title
+          href:
+            sourcePath: objid
+            type: STRING
+            label: GeotekniskUnders-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskunders/items/{{value}}"
+  geotekniskborehullunders:
+    sourcePath: /geotekniskborehullunders
+    type: OBJECT
+    objectType: GeotekniskBorehullUnders
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      dybdeGrunnvannstand:
+        sourcePath: dybdegrunnvannstand
+        type: FLOAT
+      eksternIdentifikasjon_eksternId:
+        sourcePath: eksternidentifikasjon_eksternid
+        type: STRING
+      eksternIdentifikasjon_eksternLeveringDato:
+        sourcePath: eksternidentifikasjon_eksternleveringdato
+        type: DATE
+        role: PRIMARY_INSTANT
+      eksternIdentifikasjon_eksternNavnerom:
+        sourcePath: eksternidentifikasjon_eksternnavnerom
+        type: STRING
+      eksternIdentifikasjon_eksternVersjonId:
+        sourcePath: eksternidentifikasjon_eksternversjonid
+        type: STRING
+      forboretDiameter:
+        sourcePath: forboretdiameter
+        type: FLOAT
+      forboretLengde:
+        sourcePath: forboretlengde
+        type: FLOAT
+      forboretStartLengde:
+        sourcePath: forboretstartlengde
+        type: FLOAT
+      forboringMetode:
+        sourcePath: forboringmetode
+        type: STRING
+      geotekniskMetode:
+        sourcePath: geotekniskmetode
+        type: STRING
+        constraints:
+          codelist: GeotekniskMetodeKode
+          required: true
+      høyde:
+        sourcePath: høyde
+        type: FLOAT
+      høydeReferanse:
+        sourcePath: høydereferanse
+        type: STRING
+        constraints:
+          codelist: NADAG_H_yderef
+      opprettetDato:
+        sourcePath: opprettetdato
+        type: DATE
+        constraints:
+          required: true
+      stoppKode:
+        sourcePath: stoppkode
+        type: STRING
+        constraints:
+          codelist: GeotekniskStoppkode
+      undersøkelseNr:
+        sourcePath: undersøkelsenr
+        type: STRING
+      undersPkt:
+        type: OBJECT
+        objectType: Link
+        properties:
+          title:
+            sourcePath: underspkt
+            type: STRING
+            label: GeotekniskBorehull-title
+          href:
+            sourcePath: underspkt
+            type: STRING
+            label: GeotekniskBorehull-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskborehull/items/{{value}}"
+      metode:
+        sourcePath: "[objid=geotekniskborehullundersobjid]GeotekniskBorehullUnders_metode/[geotekniskmetodeobjid=objid]geotekniskmetode"
+        type: OBJECT_ARRAY
+        objectType: Link
+        constraints:
+          minOccurrence: 0
+        properties:
+          title:
+            sourcePath: objid
+            type: STRING
+            label: Geotekniskmetode-title
+          href:
+            sourcePath: objid
+            type: STRING
+            label: Geotekniskmetode-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskmetode/items/{{value}}"
+  geotekniskdokument:
+    sourcePath: /geotekniskdokument
+    type: OBJECT
+    objectType: GeotekniskDokument
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      beskrivelse:
+        sourcePath: beskrivelse
+        type: STRING
+      dokumentDato:
+        sourcePath: dokumentdato
+        type: DATE
+        role: PRIMARY_INSTANT
+      dokumentFilnavn:
+        sourcePath: dokumentfilnavn
+        type: STRING
+      dokumentID:
+        sourcePath: dokumentid
+        type: STRING
+      dokumentNavn:
+        sourcePath: dokumentnavn
+        type: STRING
+      dokumentNr:
+        sourcePath: dokumentnr
+        type: STRING
+      dokumentNøkkel:
+        sourcePath: dokumentnøkkel
+        type: STRING
+      dokumentType:
+        sourcePath: dokumenttype
+        type: STRING
+        constraints:
+          codelist: NADAG_DokumentType
+          required: true
+      dokumentURL:
+        sourcePath: dokumenturl
+        type: STRING
+      eksternIdentifikasjon_eksternId:
+        sourcePath: eksternidentifikasjon_eksternid
+        type: STRING
+      eksternIdentifikasjon_eksternLeveringDato:
+        sourcePath: eksternidentifikasjon_eksternleveringdato
+        type: DATE
+      eksternIdentifikasjon_eksternNavnerom:
+        sourcePath: eksternidentifikasjon_eksternnavnerom
+        type: STRING
+      eksternIdentifikasjon_eksternVersjonId:
+        sourcePath: eksternidentifikasjon_eksternversjonid
+        type: STRING
+      innholdType:
+        sourcePath: innholdtype
+        type: STRING
+      opprettetDato:
+        sourcePath: opprettetdato
+        type: DATE
+      tilhørerGBU:
+        type: OBJECT
+        objectType: Link
+        properties:
+          title:
+            sourcePath: tilhørergbu
+            type: STRING
+            label: GeotekniskBorehullUnders-title
+          href:
+            sourcePath: tilhørergbu
+            type: STRING
+            label: GeotekniskBorehullUnders-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskborehullunders/items/{{value}}"
+      tilhørerGB:
+        type: OBJECT
+        objectType: Link
+        properties:
+          title:
+            sourcePath: tilhørergb
+            type: STRING
+            label: GeotekniskBorehull-title
+          href:
+            sourcePath: tilhørergb
+            type: STRING
+            label: GeotekniskBorehull-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskborehull/items/{{value}}"
+      tilhørerGU:
+        type: OBJECT
+        objectType: Link
+        properties:
+          title:
+            sourcePath: tilhørergu
+            type: STRING
+            label: GeotekniskUnders-title
+          href:
+            sourcePath: tilhørergu
+            type: STRING
+            label: GeotekniskUnders-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskunders/items/{{value}}"
+      tilhørerFeltUnders:
+        type: OBJECT
+        objectType: Link
+        properties:
+          title:
+            sourcePath: tilhørerfeltunders
+            type: STRING
+            label: GeotekniskFeltUnders-title
+          href:
+            sourcePath: tilhørerfeltunders
+            type: STRING
+            label: GeotekniskFeltUnders-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskfeltunders/items/{{value}}"
+  geotekniskfeltunders:
+    sourcePath: /geotekniskfeltunders
+    type: OBJECT
+    objectType: GeotekniskFeltUnders
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      eksternidentifikasjon_eksternId:
+        sourcePath: eksternidentifikasjon_eksternid
+        type: STRING
+      eksternidentifikasjon_eksternLeveringDato:
+        sourcePath: eksternidentifikasjon_eksternleveringdato
+        type: DATE
+        role: PRIMARY_INSTANT
+      eksternidentifikasjon_eksternNavnerom:
+        sourcePath: eksternidentifikasjon_eksternnavnerom
+        type: STRING
+      eksternidentifikasjon_eksternVersjonId:
+        sourcePath: eksternidentifikasjon_eksternversjonid
+        type: STRING
+      feltundersNr:
+        sourcePath: feltundersnr
+        type: STRING
+      feltundersType:
+        sourcePath: feltunderstype
+        type: STRING
+        constraints:
+          codelist: FeltUndersTypeKode
+      geotekniskFeltUndersMetode:
+        sourcePath: geotekniskfeltundersmetode
+        type: STRING
+        constraints:
+          codelist: GeotekniskFeltUndersMetodeKode
+      høyde:
+        sourcePath: høyde
+        type: FLOAT
+      høydeFjell:
+        sourcePath: høydefjell
+        type: FLOAT
+      høydeReferanse:
+        sourcePath: høydereferanse
+        type: STRING
+        constraints:
+          codelist: NADAG_H_yderef
+      identifikasjon_lokalId:
+        sourcePath: identifikasjon_lokalid
+        type: STRING
+        constraints:
+          required: true
+      identifikasjon_navnerom:
+        sourcePath: identifikasjon_navnerom
+        type: STRING
+        constraints:
+          required: true
+      identifikasjon_versjonId:
+        sourcePath: identifikasjon_versjonid
+        type: STRING
+      opprettetDato:
+        sourcePath: opprettetdato
+        type: DATE
+      posisjon:
+        sourcePath: posisjon
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+        constraints:
+          required: true
+      tolkningMetode:
+        sourcePath: tolkningmetode
+        type: STRING
+        constraints:
+          codelist: TolkningMetodeKode
+      tilhørerGU:
+        type: OBJECT
+        objectType: Link
+        properties:
+          title:
+            sourcePath: tilhørergu
+            type: STRING
+            label: GeotekniskUnders-title
+          href:
+            sourcePath: tilhørergu
+            type: STRING
+            label: GeotekniskUnders-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskunders/items/{{value}}"
+  geotekniskprøveserie:
+    sourcePath: /geotekniskprøveserie
+    type: OBJECT
+    objectType: GeotekniskPrøveserie
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      erOmrørt:
+        sourcePath: eromrørt
+        type: BOOLEAN
+      erUforstyrret:
+        sourcePath: eruforstyrret
+        type: BOOLEAN
+      prøvegrop:
+        sourcePath: prøvegrop
+        type: BOOLEAN
+      prøvegropKun:
+        sourcePath: prøvegropkun
+        type: BOOLEAN
+      skovelprøve:
+        sourcePath: skovelprøve
+        type: BOOLEAN
+      skovelprøveKun:
+        sourcePath: skovelprøvekun
+        type: BOOLEAN
+  geotekniskprøveseriedel:
+    sourcePath: /geotekniskprøveseriedel
+    type: OBJECT
+    objectType: GeotekniskPrøveseriedel
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      fraLengde:
+        sourcePath: fralengde
+        type: FLOAT
+      prøveMetode:
+        sourcePath: prøvemetode
+        type: STRING
+      prøveseriedelId:
+        sourcePath: prøveseriedelid
+        type: STRING
+        constraints:
+          required: true
+      prøveseriedelNavn:
+        sourcePath: prøveseriedelnavn
+        type: STRING
+      tilLengde:
+        sourcePath: tillengde
+        type: FLOAT
+      tilhørerPrøveserie:
+        type: OBJECT
+        objectType: Link
+        properties:
+          title:
+            sourcePath: tilhørerprøveserie
+            type: STRING
+            label: GeotekniskPrøveserie-title
+          href:
+            sourcePath: tilhørerprøveserie
+            type: STRING
+            label: GeotekniskPrøveserie-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskprøveserie/items/{{value}}"
+  geoteknisktolketlag:
+    sourcePath: /geoteknisktolketlag
+    type: OBJECT
+    objectType: GeotekniskTolketLag
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      eksternIdentifikasjon_eksternId:
+        sourcePath: eksternidentifikasjon_eksternid
+        type: STRING
+      eksternIdentifikasjon_eksternLeveringDato:
+        sourcePath: eksternidentifikasjon_eksternleveringdato
+        type: DATE
+        role: PRIMARY_INSTANT
+      eksternIdentifikasjon_eksternNavnerom:
+        sourcePath: eksternidentifikasjon_eksternnavnerom
+        type: STRING
+      eksternIdentifikasjon_eksternVersjonId:
+        sourcePath: eksternidentifikasjon_eksternversjonid
+        type: STRING
+      hovedLagKlassifiseringsKode:
+        sourcePath: hovedlagklassifiseringskode
+        type: STRING
+        constraints:
+          codelist: HovedLagKlassifisering
+      høyde:
+        sourcePath: høyde
+        type: FLOAT
+      høydeReferanse:
+        sourcePath: høydereferanse
+        type: STRING
+        constraints:
+          codelist: NADAG_H_yderef
+      klassifiseringMetode:
+        sourcePath: klassifiseringmetode
+        type: STRING
+        constraints:
+          codelist: KlassifiseringsMetode
+      lagBeskrivelse:
+        sourcePath: lagbeskrivelse
+        type: STRING
+      navn:
+        sourcePath: navn
+        type: STRING
+      posisjon:
+        sourcePath: posisjon
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+        constraints:
+          required: true
+      påTerrengOverflate:
+        sourcePath: påterrengoverflate
+        type: BOOLEAN
+      tolketAv:
+        sourcePath: tolketav
+        type: STRING
+      tolketLagID:
+        sourcePath: tolketlagid
+        type: STRING
+      tolketTidspunkt:
+        sourcePath: tolkettidspunkt
+        type: DATE
+      tolkningMerknad:
+        sourcePath: tolkningmerknad
+        type: STRING
+      underTerrengOverflate:
+        sourcePath: underterrengoverflate
+        type: BOOLEAN
+      vurdering:
+        sourcePath: vurdering
+        type: FLOAT
+      tilhørerTolketPunkt:
+        type: OBJECT
+        objectType: Link
+        properties:
+          title:
+            sourcePath: tilhørertolketpunkt
+            type: STRING
+            label: GeotekniskTolketPunkt-title
+          href:
+            sourcePath: tilhørertolketpunkt
+            type: STRING
+            label: GeotekniskTolketPunkt-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geoteknisktolketpunkt/items/{{value}}"
+  geoteknisktolketpunkt:
+    sourcePath: /geoteknisktolketpunkt
+    type: OBJECT
+    objectType: GeotekniskTolketPunkt
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      beskrivelse:
+        sourcePath: beskrivelse
+        type: STRING
+      digitaliseringsmålestokk:
+        sourcePath: digitaliseringsmålestokk
+        type: INTEGER
+      høyde:
+        sourcePath: høyde
+        type: FLOAT
+      høydeReferanse:
+        sourcePath: høydereferanse
+        type: STRING
+        constraints:
+          codelist: NADAG_H_yderef
+      identifikasjon_lokalId:
+        sourcePath: identifikasjon_lokalid
+        type: STRING
+        constraints:
+          required: true
+      identifikasjon_navnerom:
+        sourcePath: identifikasjon_navnerom
+        type: STRING
+        constraints:
+          required: true
+      identifikasjon_versjonId:
+        sourcePath: identifikasjon_versjonid
+        type: STRING
+      kvalitet_målemetode:
+        sourcePath: kvalitet_målemetode
+        type: STRING
+        constraints:
+          codelist: M_lemetode
+      kvalitet_målemetodeHøyde:
+        sourcePath: kvalitet_målemetodehøyde
+        type: STRING
+        constraints:
+          codelist: M_lemetodeH_yde
+      kvalitet_nøyaktighet:
+        sourcePath: kvalitet_nøyaktighet
+        type: INTEGER
+      kvalitet_nøyaktighetHøyde:
+        sourcePath: kvalitet_nøyaktighethøyde
+        type: INTEGER
+      navn:
+        sourcePath: navn
+        type: STRING
+      oppdateringsdato:
+        sourcePath: oppdateringsdato
+        type: DATE
+        role: PRIMARY_INSTANT
+      posisjon:
+        sourcePath: posisjon
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+        constraints:
+          required: true
+      tolketAv:
+        sourcePath: tolketav
+        type: STRING
+      tolketTidspunkt:
+        sourcePath: tolkettidspunkt
+        type: DATE
+      tilhørerGB:
+        type: OBJECT
+        objectType: Link
+        properties:
+          title:
+            sourcePath: tilhørergb
+            type: STRING
+            label: GeotekniskBorehull-title
+          href:
+            sourcePath: tilhørergb
+            type: STRING
+            label: GeotekniskBorehull-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskborehull/items/{{value}}"
+      tilhørerGU:
+        type: OBJECT
+        objectType: Link
+        properties:
+          title:
+            sourcePath: tilhørergu
+            type: STRING
+            label: GeotekniskUnders-title
+          href:
+            sourcePath: tilhørergu
+            type: STRING
+            label: GeotekniskUnders-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskunders/items/{{value}}"
+  geotekniskunders:
+    sourcePath: /geotekniskunders
+    type: OBJECT
+    objectType: GeotekniskUnders
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      eksternIdentifikasjon_eksternId:
+        sourcePath: eksternidentifikasjon_eksternid
+        type: STRING
+      eksternIdentifikasjon_eksternLeveringDato:
+        sourcePath: eksternidentifikasjon_eksternleveringdato
+        type: DATE
+        role: PRIMARY_INSTANT
+      eksternIdentifikasjon_eksternNavnerom:
+        sourcePath: eksternidentifikasjon_eksternnavnerom
+        type: STRING
+      eksternIdentifikasjon_eksternVersjonId:
+        sourcePath: eksternidentifikasjon_eksternversjonid
+        type: STRING
+      opphav:
+        sourcePath: opphav
+        type: STRING
+      opprettetDato:
+        sourcePath: opprettetdato
+        type: DATE
+        constraints:
+          required: true
+      prosjektNr:
+        sourcePath: prosjektnr
+        type: STRING
+      representasjonKvalitet:
+        sourcePath: representasjonkvalitet
+        type: STRING
+        constraints:
+          codelist: RepresentasjonKvalitet
+      undersøkelseÅrAntatt:
+        sourcePath: undersøkelseårantatt
+        type: INTEGER
+      undersPkt:
+        sourcePath: "[objid=geotekniskundersobjid]GeotekniskUnders_undersPkt/[geotekniskborehullobjid=objid]geotekniskborehull"
+        type: OBJECT_ARRAY
+        objectType: Link
+        constraints:
+          minOccurrence: 0
+        properties:
+          title:
+            sourcePath: objid
+            type: STRING
+            label: GeotekniskBorehull-title
+          href:
+            sourcePath: objid
+            type: STRING
+            label: GeotekniskBorehull-ID
+            transformations:
+            - stringFormat: "{{serviceUrl}}/collections/geotekniskborehull/items/{{value}}"
+  geotekniskundersøkelsegrense:
+    sourcePath: /geotekniskundersøkelsegrense
+    type: OBJECT
+    objectType: GeotekniskUndersøkelseGrense
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+  graveprøve:
+    sourcePath: /graveprøve
+    type: OBJECT
+    objectType: GravePrøve
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+  grunnvannmåling:
+    sourcePath: /grunnvannmåling
+    type: OBJECT
+    objectType: GrunnvannMåling
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      erLangtidsobservasjon:
+        sourcePath: erlangtidsobservasjon
+        type: BOOLEAN
+        constraints:
+          required: true
+      filterDyp:
+        sourcePath: filterdyp
+        type: FLOAT
+      filterLengde:
+        sourcePath: filterlengde
+        type: FLOAT
+      filterType:
+        sourcePath: filtertype
+        type: STRING
+      grunnvannAkvifer:
+        sourcePath: grunnvannakvifer
+        type: STRING
+        constraints:
+          codelist: AkviferType
+      rørBunn:
+        sourcePath: rørbunn
+        type: FLOAT
+      rørTopp:
+        sourcePath: rørtopp
+        type: FLOAT
+      rørType:
+        sourcePath: rørtype
+        type: STRING
+  hydraulisktest:
+    sourcePath: /hydraulisktest
+    type: OBJECT
+    objectType: HydrauliskTest
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      rørBunn:
+        sourcePath: rørbunn
+        type: FLOAT
+      rørTopp:
+        sourcePath: rørtopp
+        type: FLOAT
+      rørType:
+        sourcePath: rørtype
+        type: STRING
+  kanneprøve:
+    sourcePath: /kanneprøve
+    type: OBJECT
+    objectType: KannePrøve
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+  kjerneboring:
+    sourcePath: /kjerneboring
+    type: OBJECT
+    objectType: KjerneBoring
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      boretLengdeTilBerg_borlengdeKvalitet:
+        sourcePath: boretlengdetilberg_borlengdekvalitet
+        type: STRING
+        constraints:
+          codelist: KvalitetBorlengdeTilBerg
+      boretLengdeTilBerg_borlengdeTilBerg:
+        sourcePath: boretlengdetilberg_borlengdetilberg
+        type: FLOAT
+  kjerneprøve:
+    sourcePath: /kjerneprøve
+    type: OBJECT
+    objectType: KjernePrøve
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      boretLengdeTilBerg_borlengdeKvalitet:
+        sourcePath: boretlengdetilberg_borlengdekvalitet
+        type: STRING
+        constraints:
+          codelist: KvalitetBorlengdeTilBerg
+      boretLengdeTilBerg_borlengdeTilBerg:
+        sourcePath: boretlengdetilberg_borlengdetilberg
+        type: FLOAT
+  kombinasjonsondering:
+    sourcePath: /kombinasjonsondering
+    type: OBJECT
+    objectType: KombinasjonSondering
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      boretLengdeIBerg:
+        sourcePath: boretlengdeiberg
+        type: FLOAT
+      boretLengdeTilBerg_borlengdeKvalitet:
+        sourcePath: boretlengdetilberg_borlengdekvalitet
+        type: STRING
+        constraints:
+          codelist: KvalitetBorlengdeTilBerg
+      boretLengdeTilBerg_borlengdeTilBerg:
+        sourcePath: boretlengdetilberg_borlengdetilberg
+        type: FLOAT
+      maksLast:
+        sourcePath: makslast
+        type: FLOAT
+  miljøundersøkelse:
+    sourcePath: /miljøundersøkelse
+    type: OBJECT
+    objectType: MiljøUndersøkelse
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+  naverprøve:
+    sourcePath: /naverprøve
+    type: OBJECT
+    objectType: NaverPrøve
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+  platebelastning:
+    sourcePath: /platebelastning
+    type: OBJECT
+    objectType: Platebelastning
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      arealPlate:
+        sourcePath: arealplate
+        type: FLOAT
+      lasttrinnAntall:
+        sourcePath: lasttrinnantall
+        type: INTEGER
+  poretrykkmåling:
+    sourcePath: /poretrykkmåling
+    type: OBJECT
+    objectType: PoretrykkMåling
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      filterLengde:
+        sourcePath: filterlengde
+        type: FLOAT
+      filterType:
+        sourcePath: filtertype
+        type: STRING
+      installasjonTidspunkt:
+        sourcePath: installasjontidspunkt
+        type: DATE
+        role: PRIMARY_INSTANT
+      koteSpiss:
+        sourcePath: kotespiss
+        type: FLOAT
+      målerKategori:
+        sourcePath: målerkategori
+        type: STRING
+        constraints:
+          codelist: PoretrykkM_leKategori
+      målerspissNummer:
+        sourcePath: målerspissnummer
+        type: STRING
+      målerType:
+        sourcePath: målertype
+        type: STRING
+      rørBunn:
+        sourcePath: rørbunn
+        type: FLOAT
+      rørTopp:
+        sourcePath: rørtopp
+        type: FLOAT
+      rørToppFilter:
+        sourcePath: rørtoppfilter
+        type: FLOAT
+      rørToppSlange:
+        sourcePath: rørtoppslange
+        type: FLOAT
+  ramprøve:
+    sourcePath: /ramprøve
+    type: OBJECT
+    objectType: RamPrøve
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+  sedimentprøve:
+    sourcePath: /sedimentprøve
+    type: OBJECT
+    objectType: SedimentPrøve
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+  skovlprøve:
+    sourcePath: /skovlprøve
+    type: OBJECT
+    objectType: SkovlPrøve
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+  statisksondering:
+    sourcePath: /statisksondering
+    type: OBJECT
+    objectType: StatiskSondering
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      telenivå:
+        sourcePath: telenivå
+        type: FLOAT
+  stempelprøve:
+    sourcePath: /stempelprøve
+    type: OBJECT
+    objectType: StempelPrøve
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+  trykksondering:
+    sourcePath: /trykksondering
+    type: OBJECT
+    objectType: Trykksondering
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      alpha:
+        sourcePath: alpha
+        type: FLOAT
+      atmosferiskTrykkKorreksjon:
+        sourcePath: atmosferisktrykkkorreksjon
+        type: FLOAT
+      cptKorreksjonsFaktor:
+        sourcePath: cptkorreksjonsfaktor
+        type: FLOAT
+      filterType:
+        sourcePath: filtertype
+        type: STRING
+      hylseRadieKorreksjon:
+        sourcePath: hylseradiekorreksjon
+        type: FLOAT
+      initiellSpissmotstand:
+        sourcePath: initiellspissmotstand
+        type: FLOAT
+      metningsMedium:
+        sourcePath: metningsmedium
+        type: STRING
+      nedpressingsKapasitet:
+        sourcePath: nedpressingskapasitet
+        type: STRING
+        constraints:
+          codelist: NedpressingsKapasitet
+      nedpressningsHastighet:
+        sourcePath: nedpressningshastighet
+        type: FLOAT
+      nullpunktsKorreksjon:
+        sourcePath: nullpunktskorreksjon
+        type: FLOAT
+      rørKappeKorreksjonsFaktor:
+        sourcePath: rørkappekorreksjonsfaktor
+        type: FLOAT
+      sidefriksjonKorreksjon:
+        sourcePath: sidefriksjonkorreksjon
+        type: FLOAT
+      sondeIdentifikasjon:
+        sourcePath: sondeidentifikasjon
+        type: STRING
+      sondeKalibreringDato:
+        sourcePath: sondekalibreringdato
+        type: DATE
+        role: PRIMARY_INSTANT
+      sondeKvalitetKlasse:
+        sourcePath: sondekvalitetklasse
+        type: STRING
+        constraints:
+          codelist: SondeKvalitetsKlasse
+      spissKorreksjonFaktor:
+        sourcePath: spisskorreksjonfaktor
+        type: FLOAT
+      spissType:
+        sourcePath: spisstype
+        type: STRING
+  vannprøve:
+    sourcePath: /vannprøve
+    type: OBJECT
+    objectType: VannPrøve
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      vannPrøveType:
+        sourcePath: vannprøvetype
+        type: STRING
+        constraints:
+          codelist: VannPr_veKilde
+  vingeboring:
+    sourcePath: /vingeboring
+    type: OBJECT
+    objectType: Vingeboring
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      vannstandIBorehull:
+        sourcePath: vannstandiborehull
+        type: FLOAT
+      vingeDiameter:
+        sourcePath: vingediameter
+        type: FLOAT
+      vingeHøyde:
+        sourcePath: vingehøyde
+        type: FLOAT
+      vingeIdentitet:
+        sourcePath: vingeidentitet
+        type: STRING

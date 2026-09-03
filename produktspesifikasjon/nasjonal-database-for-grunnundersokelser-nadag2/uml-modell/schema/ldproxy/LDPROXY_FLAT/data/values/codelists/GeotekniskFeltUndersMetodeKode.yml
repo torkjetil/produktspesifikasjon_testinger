@@ -1,0 +1,13 @@
+---
+label: GeotekniskFeltUndersMetodeKode
+entries:
+  BelastningTest: BelastningTest
+  ElektriskSondering: ElektriskSondering
+  HelningMåling: HelningMåling
+  PermeabilitetMåling: PermeabilitetMåling
+  Ramsondering: Ramsondering
+  SPT: SPT
+  SetningMåling: SetningMåling
+  Skovlboring: Skovlboring
+  Skrueplate: Skrueplate
+sourceType: TEMPLATES

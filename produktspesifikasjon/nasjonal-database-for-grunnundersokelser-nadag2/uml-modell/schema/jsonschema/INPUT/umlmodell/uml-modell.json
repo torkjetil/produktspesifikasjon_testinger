@@ -1,0 +1,1568 @@
+{
+  "$comment": "JSON Schema document created by ShapeChange - https://shapechange.net/",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://skjema.geonorge.no/SOSI/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag2/uml-modell/umlmodell/uml-modell.json",
+  "definitions": {
+    "AkviferType": {
+      "type": "string",
+      "format": "uri"
+    },
+    "BlokkPrøve": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "BorlengdeTilBerg": {
+      "type": "object",
+      "properties": {
+        "borlengdeKvalitet": {
+          "$ref": "#/definitions/KvalitetBorlengdeTilBerg"
+        },
+        "borlengdeTilBerg": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "borlengdeKvalitet",
+        "borlengdeTilBerg"
+      ]
+    },
+    "DeformasjonMåling": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskObservasjon"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "absoluttverdi": {
+              "type": "boolean"
+            },
+            "installasjonNivå": {
+              "type": "number"
+            },
+            "installasjonTidspunkt": {
+              "type": "string",
+              "format": "date"
+            },
+            "målepunkt": {
+              "type": "number"
+            },
+            "målertype": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "DilatometerTest": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskInsituTest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "dilatometerModulus": {
+              "type": "number"
+            },
+            "horisontalSpenningIndeks": {
+              "type": "number"
+            },
+            "materialIndeks": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "DynamiskSondering": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskSondering"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "antPrøveuttakForstyrretMatr": {
+              "type": "integer"
+            }
+          }
+        }
+      ]
+    },
+    "EksternIdentifikasjon": {
+      "type": "object",
+      "properties": {
+        "eksternId": {
+          "type": "string"
+        },
+        "eksternLeveringDato": {
+          "type": "string",
+          "format": "date"
+        },
+        "eksternNavnerom": {
+          "type": "string"
+        },
+        "eksternVersjonId": {
+          "type": "string"
+        }
+      }
+    },
+    "FeltUndersTypeKode": {
+      "type": "string",
+      "format": "uri"
+    },
+    "GassMåling": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskInsituTest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "byggNummer": {
+              "type": "string"
+            },
+            "plassering": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "GassPrøve": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "GeotekniskBorehull": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeovitenskapligBorehull"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "boreNr": {
+              "type": "string"
+            },
+            "eksternIdentifikasjon": {
+              "$ref": "#/definitions/EksternIdentifikasjon"
+            },
+            "høyde": {
+              "type": "number"
+            },
+            "høydeReferanse": {
+              "$ref": "#/definitions/NADAG_Høyderef"
+            },
+            "kvikkleirePåvisning": {
+              "$ref": "#/definitions/KvikkleirePåvisningKode"
+            },
+            "maksBoretLengde": {
+              "type": "number"
+            },
+            "opphav": {
+              "type": "string"
+            },
+            "opprettetDato": {
+              "type": "string",
+              "format": "date"
+            },
+            "opprinneligGeotekniskUndersID": {
+              "type": "string"
+            },
+            "harUndersøkelse": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "uri"
+              },
+              "uniqueItems": true
+            },
+            "undersOmr": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "uri"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "opprettetDato"
+          ]
+        }
+      ]
+    },
+    "GeotekniskBorehullUnders": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeovitenskapligBorehullUndersøkelse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "dybdeGrunnvannstand": {
+              "type": "number"
+            },
+            "eksternIdentifikasjon": {
+              "$ref": "#/definitions/EksternIdentifikasjon"
+            },
+            "forboretDiameter": {
+              "type": "number"
+            },
+            "forboretLengde": {
+              "type": "number"
+            },
+            "forboretStartLengde": {
+              "type": "number"
+            },
+            "forboringMetode": {
+              "type": "string"
+            },
+            "geotekniskMetode": {
+              "$ref": "#/definitions/GeotekniskMetodeKode"
+            },
+            "høyde": {
+              "type": "number"
+            },
+            "høydeReferanse": {
+              "$ref": "#/definitions/NADAG_Høyderef"
+            },
+            "opprettetDato": {
+              "type": "string",
+              "format": "date"
+            },
+            "stoppKode": {
+              "$ref": "#/definitions/GeotekniskStoppkode"
+            },
+            "undersøkelseNr": {
+              "type": "string"
+            },
+            "undersPkt": {
+              "type": "string",
+              "format": "uri"
+            },
+            "metode": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "uri"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "geotekniskMetode",
+            "opprettetDato"
+          ]
+        }
+      ]
+    },
+    "GeotekniskDokument": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "beskrivelse": {
+          "type": "string"
+        },
+        "dokumentDato": {
+          "type": "string",
+          "format": "date"
+        },
+        "dokumentFilnavn": {
+          "type": "string"
+        },
+        "dokumentID": {
+          "type": "string"
+        },
+        "dokumentNavn": {
+          "type": "string"
+        },
+        "dokumentNr": {
+          "type": "string"
+        },
+        "dokumentNøkkel": {
+          "type": "string"
+        },
+        "dokumentType": {
+          "$ref": "#/definitions/NADAG_DokumentType"
+        },
+        "dokumentURL": {
+          "type": "string"
+        },
+        "eksternIdentifikasjon": {
+          "$ref": "#/definitions/EksternIdentifikasjon"
+        },
+        "innholdType": {
+          "type": "string"
+        },
+        "opprettetDato": {
+          "type": "string",
+          "format": "date"
+        },
+        "tilhørerGBU": {
+          "type": "string",
+          "format": "uri"
+        },
+        "tilhørerGB": {
+          "type": "string",
+          "format": "uri"
+        },
+        "tilhørerGU": {
+          "type": "string",
+          "format": "uri"
+        },
+        "tilhørerFeltUnders": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "@type",
+        "dokumentType"
+      ]
+    },
+    "GeotekniskFeltUnders": {
+      "type": "object",
+      "properties": {
+        "geometry": {
+          "$ref": "https://geojson.org/schema/Point.json"
+        },
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "eksternidentifikasjon": {
+          "$ref": "#/definitions/EksternIdentifikasjon"
+        },
+        "feltundersNr": {
+          "type": "string"
+        },
+        "feltundersType": {
+          "$ref": "#/definitions/FeltUndersTypeKode"
+        },
+        "geotekniskFeltUndersMetode": {
+          "$ref": "#/definitions/GeotekniskFeltUndersMetodeKode"
+        },
+        "høyde": {
+          "type": "number"
+        },
+        "høydeFjell": {
+          "type": "number"
+        },
+        "høydeReferanse": {
+          "$ref": "#/definitions/NADAG_Høyderef"
+        },
+        "identifikasjon": {
+          "$ref": "#/definitions/Identifikasjon"
+        },
+        "opprettetDato": {
+          "type": "string",
+          "format": "date"
+        },
+        "tolkningMetode": {
+          "$ref": "#/definitions/TolkningMetodeKode"
+        },
+        "tilhørerGU": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "@type",
+        "identifikasjon"
+      ]
+    },
+    "GeotekniskFeltUndersMetodeKode": {
+      "type": "string",
+      "format": "uri"
+    },
+    "GeotekniskInsituTest": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Geotekniskmetode"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "fraBorlengde": {
+              "type": "number"
+            },
+            "insituTestSluttTidspunkt": {
+              "type": "string",
+              "format": "date"
+            },
+            "insituTestStartTidspunkt": {
+              "type": "string",
+              "format": "date"
+            },
+            "tilBorlengde": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "GeotekniskMetodeKode": {
+      "type": "string",
+      "format": "uri"
+    },
+    "GeotekniskObservasjon": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskObservasjon_NADAG"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "tilhørerGB": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        }
+      ]
+    },
+    "GeotekniskObservasjon_NADAG": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeovitenskapeligObservasjon"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "boreBeskrivelse": {
+              "type": "string"
+            },
+            "boretAzimuth": {
+              "type": "number"
+            },
+            "boretHelningsgrad": {
+              "type": "number"
+            },
+            "boretLengde": {
+              "type": "number"
+            },
+            "boretLengdeTilBerg": {
+              "$ref": "#/definitions/BorlengdeTilBerg"
+            },
+            "dybdeFraGittPosisjon": {
+              "type": "number"
+            },
+            "dybdeFraVannoverflaten": {
+              "type": "number"
+            },
+            "dybdeGrunnvannstand": {
+              "type": "number"
+            },
+            "eksternIdentifikasjon": {
+              "$ref": "#/definitions/EksternIdentifikasjon"
+            },
+            "forboretDiameter": {
+              "type": "number"
+            },
+            "forboretLengde": {
+              "type": "number"
+            },
+            "forboretStartLengde": {
+              "type": "number"
+            },
+            "forboringMetode": {
+              "type": "string"
+            },
+            "høyde": {
+              "type": "number"
+            },
+            "høydeReferanse": {
+              "$ref": "#/definitions/NADAG_Høyderef"
+            },
+            "lenkeTilTileggsinfo": {
+              "type": "string"
+            },
+            "opprettetDato": {
+              "type": "string",
+              "format": "date"
+            },
+            "stoppKode": {
+              "$ref": "#/definitions/GeotekniskStoppkode"
+            },
+            "undersøkelseNr": {
+              "type": "string"
+            },
+            "værforholdVedBoring": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "opprettetDato"
+          ]
+        }
+      ]
+    },
+    "GeotekniskPrøveserie": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "erOmrørt": {
+              "type": "boolean"
+            },
+            "erUforstyrret": {
+              "type": "boolean"
+            },
+            "prøvegrop": {
+              "type": "boolean"
+            },
+            "prøvegropKun": {
+              "type": "boolean"
+            },
+            "skovelprøve": {
+              "type": "boolean"
+            },
+            "skovelprøveKun": {
+              "type": "boolean"
+            }
+          }
+        }
+      ]
+    },
+    "GeotekniskPrøveseriedel": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "fraLengde": {
+          "type": "number"
+        },
+        "prøveMetode": {
+          "type": "string"
+        },
+        "prøveseriedelId": {
+          "type": "string"
+        },
+        "prøveseriedelNavn": {
+          "type": "string"
+        },
+        "tilLengde": {
+          "type": "number"
+        },
+        "tilhørerPrøveserie": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "@type",
+        "prøveseriedelId"
+      ]
+    },
+    "GeotekniskPrøvetaking": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Geotekniskmetode"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "densitetPrøvetaking": {
+              "type": "number"
+            },
+            "fraBorlengde": {
+              "type": "number"
+            },
+            "miljøtekniskUndersøkelse": {
+              "type": "string"
+            },
+            "prøvetype": {
+              "$ref": "#/definitions/PrøvetakingType"
+            },
+            "tilBorlengde": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "GeotekniskSondering": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Geotekniskmetode"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "fraBorlengde": {
+              "type": "number"
+            },
+            "tilBorlengde": {
+              "type": "number"
+            },
+            "torvTykkelse": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "GeotekniskStoppkode": {
+      "type": "string",
+      "format": "uri"
+    },
+    "GeotekniskTolketLag": {
+      "type": "object",
+      "properties": {
+        "geometry": {
+          "$ref": "https://geojson.org/schema/Point.json"
+        },
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "eksternIdentifikasjon": {
+          "$ref": "#/definitions/EksternIdentifikasjon"
+        },
+        "hovedLagKlassifiseringsKode": {
+          "$ref": "#/definitions/HovedLagKlassifisering"
+        },
+        "høyde": {
+          "type": "number"
+        },
+        "høydeReferanse": {
+          "$ref": "#/definitions/NADAG_Høyderef"
+        },
+        "klassifiseringMetode": {
+          "$ref": "#/definitions/KlassifiseringsMetode"
+        },
+        "lagBeskrivelse": {
+          "type": "string"
+        },
+        "navn": {
+          "type": "string"
+        },
+        "påTerrengOverflate": {
+          "type": "boolean"
+        },
+        "tolketAv": {
+          "type": "string"
+        },
+        "tolketLagID": {
+          "type": "string"
+        },
+        "tolketTidspunkt": {
+          "type": "string",
+          "format": "date"
+        },
+        "tolkningMerknad": {
+          "type": "string"
+        },
+        "underTerrengOverflate": {
+          "type": "boolean"
+        },
+        "vurdering": {
+          "type": "number"
+        },
+        "tilhørerTolketPunkt": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "@type"
+      ]
+    },
+    "GeotekniskTolketPunkt": {
+      "type": "object",
+      "properties": {
+        "geometry": {
+          "$ref": "https://geojson.org/schema/Point.json"
+        },
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "beskrivelse": {
+          "type": "string"
+        },
+        "digitaliseringsmålestokk": {
+          "type": "integer"
+        },
+        "høyde": {
+          "type": "number"
+        },
+        "høydeReferanse": {
+          "$ref": "#/definitions/NADAG_Høyderef"
+        },
+        "identifikasjon": {
+          "$ref": "#/definitions/Identifikasjon"
+        },
+        "kvalitet": {
+          "$ref": "#/definitions/PosisjonskvalitetNADAG"
+        },
+        "navn": {
+          "type": "string"
+        },
+        "oppdateringsdato": {
+          "type": "string",
+          "format": "date"
+        },
+        "tolketAv": {
+          "type": "string"
+        },
+        "tolketTidspunkt": {
+          "type": "string",
+          "format": "date"
+        },
+        "tilhørerGB": {
+          "type": "string",
+          "format": "uri"
+        },
+        "tilhørerGU": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "@type",
+        "identifikasjon"
+      ]
+    },
+    "GeotekniskUnders": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeovitenskapeligUndersøkelse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "eksternIdentifikasjon": {
+              "$ref": "#/definitions/EksternIdentifikasjon"
+            },
+            "opphav": {
+              "type": "string"
+            },
+            "opprettetDato": {
+              "type": "string",
+              "format": "date"
+            },
+            "prosjektNr": {
+              "type": "string"
+            },
+            "representasjonKvalitet": {
+              "$ref": "#/definitions/RepresentasjonKvalitet"
+            },
+            "undersøkelseÅrAntatt": {
+              "type": "integer"
+            },
+            "undersPkt": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "uri"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "opprettetDato"
+          ]
+        }
+      ]
+    },
+    "GeotekniskUndersøkelseGrense": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeovitenskapeligUndersøkelseGrense"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "Geotekniskmetode": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "identifikasjon": {
+          "$ref": "#/definitions/Identifikasjon"
+        }
+      },
+      "required": [
+        "@type",
+        "identifikasjon"
+      ]
+    },
+    "GeovitenskapeligObservasjon": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Supertype_Geotekn_obj_pkt"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "geometry": {
+              "$ref": "https://geojson.org/schema/Point.json"
+            },
+            "observasjonSlutt": {
+              "type": "string",
+              "format": "date"
+            },
+            "observasjonStart": {
+              "type": "string",
+              "format": "date"
+            },
+            "observatør": {
+              "type": "string"
+            },
+            "opphav": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "GeovitenskapeligUndersøkelse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Supertype_Geotekn_obj_omr"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "beskrivelse": {
+              "type": "string"
+            },
+            "område": {
+              "$ref": "https://geojson.org/schema/Polygon.json"
+            },
+            "oppdragsgiver": {
+              "type": "string"
+            },
+            "oppdragstaker": {
+              "type": "string"
+            },
+            "prosjektNavn": {
+              "type": "string"
+            },
+            "sammensattområde": {
+              "$ref": "https://geojson.org/schema/MultiPolygon.json"
+            },
+            "undersøkelsePeriodeFra": {
+              "type": "string",
+              "format": "date"
+            },
+            "undersøkelsePeriodeTil": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        }
+      ]
+    },
+    "GeovitenskapeligUndersøkelseDelområde": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Supertype_Geotekn_obj_omr"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "geometry": {
+              "$ref": "https://geojson.org/schema/Polygon.json"
+            },
+            "beskrivelse": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "GeovitenskapeligUndersøkelseDelområdeGrense": {
+      "type": "object",
+      "properties": {
+        "geometry": {
+          "$ref": "https://geojson.org/schema/LineString.json"
+        },
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type"
+      ]
+    },
+    "GeovitenskapeligUndersøkelseGrense": {
+      "type": "object",
+      "properties": {
+        "geometry": {
+          "$ref": "https://geojson.org/schema/LineString.json"
+        },
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type"
+      ]
+    },
+    "GeovitenskapligBorehull": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Supertype_Geotekn_obj_pkt"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "geometry": {
+              "$ref": "https://geojson.org/schema/Point.json"
+            },
+            "antallBorehullUndersøkelser": {
+              "type": "integer"
+            },
+            "beskrivelse": {
+              "type": "string"
+            },
+            "boretLengdeTilBerg": {
+              "$ref": "#/definitions/BorlengdeTilBerg"
+            },
+            "gjennomboretMedium": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GjennomboretMedium"
+              },
+              "uniqueItems": true
+            }
+          }
+        }
+      ]
+    },
+    "GeovitenskapligBorehullUndersøkelse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Supertype_Geotekn_obj_pkt"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "boreBeskrivelse": {
+              "type": "string"
+            },
+            "borehullForløp": {
+              "$ref": "https://geojson.org/schema/LineString.json"
+            },
+            "boretAzimuth": {
+              "type": "number"
+            },
+            "boretHelningsgrad": {
+              "type": "number"
+            },
+            "boretLengde": {
+              "type": "number"
+            },
+            "boretLengdeTilBerg": {
+              "$ref": "#/definitions/BorlengdeTilBerg"
+            },
+            "dybdeFraGittPosisjon": {
+              "type": "number"
+            },
+            "dybdeFraVannoverflaten": {
+              "type": "number"
+            },
+            "lenkeTilTileggsinfo": {
+              "type": "string"
+            },
+            "opphav": {
+              "type": "string"
+            },
+            "posisjon": {
+              "$ref": "https://geojson.org/schema/Point.json"
+            },
+            "undersøkelseSlutt": {
+              "type": "string",
+              "format": "date"
+            },
+            "undersøkelseStart": {
+              "type": "string",
+              "format": "date"
+            },
+            "værforholdVedBoring": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "posisjon"
+          ]
+        }
+      ]
+    },
+    "GjennomboretMedium": {
+      "type": "string",
+      "format": "uri"
+    },
+    "GravePrøve": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "GrunnvannMåling": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskInsituTest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "erLangtidsobservasjon": {
+              "type": "boolean"
+            },
+            "filterDyp": {
+              "type": "number"
+            },
+            "filterLengde": {
+              "type": "number"
+            },
+            "filterType": {
+              "type": "string"
+            },
+            "grunnvannAkvifer": {
+              "$ref": "#/definitions/AkviferType"
+            },
+            "rørBunn": {
+              "type": "number"
+            },
+            "rørTopp": {
+              "type": "number"
+            },
+            "rørType": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "erLangtidsobservasjon"
+          ]
+        }
+      ]
+    },
+    "HovedLagKlassifisering": {
+      "type": "string",
+      "format": "uri"
+    },
+    "HydrauliskTest": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskInsituTest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "rørBunn": {
+              "type": "number"
+            },
+            "rørTopp": {
+              "type": "number"
+            },
+            "rørType": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "Identifikasjon": {
+      "type": "object",
+      "properties": {
+        "lokalId": {
+          "type": "string"
+        },
+        "navnerom": {
+          "type": "string"
+        },
+        "versjonId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "lokalId",
+        "navnerom"
+      ]
+    },
+    "KannePrøve": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "KjerneBoring": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "boretLengdeTilBerg": {
+              "$ref": "#/definitions/BorlengdeTilBerg"
+            }
+          }
+        }
+      ]
+    },
+    "KjernePrøve": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "boretLengdeTilBerg": {
+              "$ref": "#/definitions/BorlengdeTilBerg"
+            }
+          }
+        }
+      ]
+    },
+    "KlassifiseringsMetode": {
+      "type": "string",
+      "format": "uri"
+    },
+    "KombinasjonSondering": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskSondering"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "boretLengdeIBerg": {
+              "type": "number"
+            },
+            "boretLengdeTilBerg": {
+              "$ref": "#/definitions/BorlengdeTilBerg"
+            },
+            "maksLast": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "KvalitetBorlengdeTilBerg": {
+      "type": "string",
+      "format": "uri"
+    },
+    "KvikkleirePåvisningKode": {
+      "type": "string",
+      "format": "uri"
+    },
+    "MiljøUndersøkelse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "Målemetode": {
+      "type": "string",
+      "format": "uri"
+    },
+    "MålemetodeHøyde": {
+      "type": "string",
+      "format": "uri"
+    },
+    "NADAG_DokumentType": {
+      "type": "string",
+      "format": "uri"
+    },
+    "NADAG_Høyderef": {
+      "type": "string",
+      "format": "uri"
+    },
+    "NaverPrøve": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "NedpressingsKapasitet": {
+      "type": "string",
+      "format": "uri"
+    },
+    "Platebelastning": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskInsituTest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "arealPlate": {
+              "type": "number"
+            },
+            "lasttrinnAntall": {
+              "type": "integer"
+            }
+          }
+        }
+      ]
+    },
+    "PoretrykkMåleKategori": {
+      "type": "string",
+      "format": "uri"
+    },
+    "PoretrykkMåling": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskInsituTest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "filterLengde": {
+              "type": "number"
+            },
+            "filterType": {
+              "type": "string"
+            },
+            "installasjonTidspunkt": {
+              "type": "string",
+              "format": "date"
+            },
+            "koteSpiss": {
+              "type": "number"
+            },
+            "målerKategori": {
+              "$ref": "#/definitions/PoretrykkMåleKategori"
+            },
+            "målerspissNummer": {
+              "type": "string"
+            },
+            "målerType": {
+              "type": "string"
+            },
+            "rørBunn": {
+              "type": "number"
+            },
+            "rørTopp": {
+              "type": "number"
+            },
+            "rørToppFilter": {
+              "type": "number"
+            },
+            "rørToppSlange": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "PosisjonskvalitetNADAG": {
+      "type": "object",
+      "properties": {
+        "målemetode": {
+          "$ref": "#/definitions/Målemetode"
+        },
+        "målemetodeHøyde": {
+          "$ref": "#/definitions/MålemetodeHøyde"
+        },
+        "nøyaktighet": {
+          "type": "integer"
+        },
+        "nøyaktighetHøyde": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "målemetode"
+      ]
+    },
+    "PrøvetakingType": {
+      "type": "string",
+      "format": "uri"
+    },
+    "RamPrøve": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "RepresentasjonKvalitet": {
+      "type": "string",
+      "format": "uri"
+    },
+    "SedimentPrøve": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "SkovlPrøve": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "SondeKvalitetsKlasse": {
+      "type": "string",
+      "format": "uri"
+    },
+    "StatiskSondering": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskSondering"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "telenivå": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "StempelPrøve": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "Supertype_Geotekn_obj_omr": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "identifikasjon": {
+          "$ref": "#/definitions/Identifikasjon"
+        },
+        "oppdateringsdato": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "@type",
+        "identifikasjon"
+      ]
+    },
+    "Supertype_Geotekn_obj_pkt": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "datafangstdato": {
+          "type": "string",
+          "format": "date"
+        },
+        "digitaliseringsmålestokk": {
+          "type": "integer"
+        },
+        "identifikasjon": {
+          "$ref": "#/definitions/Identifikasjon"
+        },
+        "kvalitet": {
+          "$ref": "#/definitions/PosisjonskvalitetNADAG"
+        },
+        "oppdateringsdato": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "@type",
+        "identifikasjon"
+      ]
+    },
+    "TolkningMetodeKode": {
+      "type": "string",
+      "format": "uri"
+    },
+    "Trykksondering": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskInsituTest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "alpha": {
+              "type": "number"
+            },
+            "atmosferiskTrykkKorreksjon": {
+              "type": "number"
+            },
+            "cptKorreksjonsFaktor": {
+              "type": "number"
+            },
+            "filterType": {
+              "type": "string"
+            },
+            "hylseRadieKorreksjon": {
+              "type": "number"
+            },
+            "initiellSpissmotstand": {
+              "type": "number"
+            },
+            "metningsMedium": {
+              "type": "string"
+            },
+            "nedpressingsKapasitet": {
+              "$ref": "#/definitions/NedpressingsKapasitet"
+            },
+            "nedpressningsHastighet": {
+              "type": "number"
+            },
+            "nullpunktsKorreksjon": {
+              "type": "number"
+            },
+            "rørKappeKorreksjonsFaktor": {
+              "type": "number"
+            },
+            "sidefriksjonKorreksjon": {
+              "type": "number"
+            },
+            "sondeIdentifikasjon": {
+              "type": "string"
+            },
+            "sondeKalibreringDato": {
+              "type": "string",
+              "format": "date"
+            },
+            "sondeKvalitetKlasse": {
+              "$ref": "#/definitions/SondeKvalitetsKlasse"
+            },
+            "spissKorreksjonFaktor": {
+              "type": "number"
+            },
+            "spissType": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "VannPrøve": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskPrøvetaking"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "vannPrøveType": {
+              "$ref": "#/definitions/VannPrøveKilde"
+            }
+          }
+        }
+      ]
+    },
+    "VannPrøveKilde": {
+      "type": "string",
+      "format": "uri"
+    },
+    "Vingeboring": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GeotekniskInsituTest"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "vannstandIBorehull": {
+              "type": "number"
+            },
+            "vingeDiameter": {
+              "type": "number"
+            },
+            "vingeHøyde": {
+              "type": "number"
+            },
+            "vingeIdentitet": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
