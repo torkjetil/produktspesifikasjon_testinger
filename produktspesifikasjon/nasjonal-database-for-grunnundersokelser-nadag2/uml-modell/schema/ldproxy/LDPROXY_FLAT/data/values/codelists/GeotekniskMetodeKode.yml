@@ -1,0 +1,55 @@
+---
+label: GeotekniskMetodeKode
+entries:
+  Bergkontrollboring: Bergkontrollboring
+  Blokkprøve: Blokkprøve
+  Dilatometertest: Dilatometertest
+  Dreiesondering manuell: Dreiesondering manuell
+  Dreiesondering maskinell: Dreiesondering maskinell
+  Dreiesondering uspesifisert: Dreiesondering uspesifisert
+  Dreietrykksondering: Dreietrykksondering
+  Dynamisk sondering uspesifisert: Dynamisk sondering uspesifisert
+  Elektrisk sondering: Elektrisk sondering
+  Enkel sondering: Enkel sondering
+  Gassmåling: Gassmåling
+  Gassprøve: Gassprøve
+  Graveprøve: Graveprøve
+  Grunnvannsmåling: Grunnvannsmåling
+  HK sondering: HK sondering
+  Hejarsondering A: Hejarsondering A
+  Hejarsondering B: Hejarsondering B
+  Hydraulisk test: Hydraulisk test
+  Ikke angitt: Ikke angitt
+  Jord-berg sondering 1: Jord-berg sondering 1
+  Jord-berg sondering 2: Jord-berg sondering 2
+  Jord-berg sondering 3: Jord-berg sondering 3
+  Kanneprøve: Kanneprøve
+  Kjerneboring: Kjerneboring
+  Kjerneprøve: Kjerneprøve
+  Kombinasjonssondering uspesifisert: Kombinasjonssondering uspesifisert
+  Kombisondering: Kombisondering
+  Miljøundersøkelse: Miljøundersøkelse
+  Naverprøve: Naverprøve
+  Platebelastning: Platebelastning
+  Poretrykksmåling: Poretrykksmåling
+  Prøve uspesifisert: Prøve uspesifisert
+  Prøveserie uspesifisert: Prøveserie uspesifisert
+  Ramprøve: Ramprøve
+  Ramsondering: Ramsondering
+  Ramsondering A: Ramsondering A
+  Ramsondering B: Ramsondering B
+  SPT: SPT
+  Sedimentprøve: Sedimentprøve
+  Skovlprøve: Skovlprøve
+  Slagsondering: Slagsondering
+  Statisk sondering uspesifisert: Statisk sondering uspesifisert
+  Stempelprøve: Stempelprøve
+  Stikksondering: Stikksondering
+  Totalsondering Norge: Totalsondering Norge
+  Totalsondering Sverige: Totalsondering Sverige
+  Trykksondering (CPT, CPTU): "Trykksondering (CPT, CPTU)"
+  Vannprøve: Vannprøve
+  Vektsondering manuell: Vektsondering manuell
+  Vektsondering maskinell: Vektsondering maskinell
+  Vingeboring: Vingeboring
+sourceType: TEMPLATES

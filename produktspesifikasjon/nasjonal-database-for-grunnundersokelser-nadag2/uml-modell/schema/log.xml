@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><ShapeChangeResult xmlns="http://www.interactive-instruments.de/ShapeChange/Result" xmlns:r="http://www.interactive-instruments.de/ShapeChange/Result" config="/home/runner/work/produktspesifikasjon_testinger/produktspesifikasjon_testinger/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag2/uml-modell/schema/shapechange-config.xml" end="Thu Sep 03 11:07:32 UTC 2026" resultCode="0" start="Thu Sep 03 11:07:26 UTC 2026" version="4.0.0">
+  <Messages>
+    <ProcessFlowInfo message="---------- Semantic validation of ShapeChange configuration: START ----------"/>
+    <Info message="Validating input parameters."/>
+    <Info message="Validation of input parameters completed."/>
+    <Info message="Validating log parameters."/>
+    <Info message="Validation of log parameters completed."/>
+    <ProcessFlowInfo message="--- Validating transformer with @id 'LDPROXY_FLAT' ..."/>
+    <ProcessFlowInfo message="--- Validating target with @class 'de.interactive_instruments.shapechange.core.target.json.JsonSchemaTarget' and @inputs 'INPUT' ..."/>
+    <ProcessFlowInfo message="--- Validating target with @class 'de.interactive_instruments.shapechange.core.target.ldproxy2.Ldproxy2Target' and @inputs 'LDPROXY_FLAT' ..."/>
+    <ProcessFlowInfo message="---------- Semantic validation of ShapeChange configuration: COMPLETE ----------"/>
+    <ProcessFlowInfo message="Application schema found, package name: 'uml-modell', target namespace: 'https://skjema.geonorge.no/SOSI/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag2/uml-modell/1.0'"/>
+    <ProcessFlowInfo message="Now processing target 'JSON Schema' for input 'INPUT'."/>
+    <ProcessFlowInfo message="Executed target class 'de.interactive_instruments.shapechange.core.target.json.JsonSchemaTarget' for input ID: 'INPUT'.&#10;-------------------------------------------------"/>
+    <ProcessFlowInfo message="Now processing transformation 'LDPROXY_FLAT' for input ID: 'INPUT'."/>
+    <ProcessFlowInfo message="========== processing phase =========="/>
+    <ProcessFlowInfo message="---------- now processing: rule-trf-prop-flatten-types ----------"/>
+    <ProcessFlowInfo message="========== postprocessing phase =========="/>
+    <ProcessFlowInfo message="---------- TransformationManager postprocessing: validating constraints ----------"/>
+    <ProcessFlowInfo message="Performed transformation for transformer ID 'LDPROXY_FLAT' for input ID: 'INPUT'.&#10;-------------------------------------------------"/>
+    <ProcessFlowInfo message="Application schema found, package name: 'uml-modell', target namespace: 'https://skjema.geonorge.no/SOSI/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag2/uml-modell/1.0'"/>
+    <ProcessFlowInfo message="Now processing target 'Ldproxy (v2)' for input 'LDPROXY_FLAT'."/>
+    <Info message="The target configuration does not contain advanced process configuration infos."/>
+    <Error message="Type 'BlokkPrøve' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::BlokkPrøve'"/>
+    </Error>
+    <Error message="Type 'DeformasjonMåling' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::DeformasjonMåling'"/>
+    </Error>
+    <Error message="Type 'DilatometerTest' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::DilatometerTest'"/>
+    </Error>
+    <Error message="Type 'DynamiskSondering' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::DynamiskSondering'"/>
+    </Error>
+    <Error message="Type 'GassMåling' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::GassMåling'"/>
+    </Error>
+    <Error message="Type 'GassPrøve' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::GassPrøve'"/>
+    </Error>
+    <Error message="Type 'GeotekniskBorehull' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::GeotekniskBorehull'"/>
+    </Error>
+    <Error message="Type 'GeotekniskBorehullUnders' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::GeotekniskBorehullUnders'"/>
+    </Error>
+    <Warning message="Type 'GeotekniskInsituTest' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::GeotekniskInsituTest'"/>
+    </Warning>
+    <Warning message="Type 'GeotekniskObservasjon' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::GeotekniskObservasjon'"/>
+    </Warning>
+    <Warning message="Type 'GeotekniskObservasjon_NADAG' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::GeotekniskObservasjon_NADAG'"/>
+    </Warning>
+    <Error message="Type 'GeotekniskPrøveserie' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::GeotekniskPrøveserie'"/>
+    </Error>
+    <Warning message="Type 'GeotekniskPrøvetaking' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::GeotekniskPrøvetaking'"/>
+    </Warning>
+    <Warning message="Type 'GeotekniskSondering' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::GeotekniskSondering'"/>
+    </Warning>
+    <Error message="Type 'GeotekniskUnders' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::GeotekniskUnders'"/>
+    </Error>
+    <Error message="Type 'GeotekniskUndersøkelseGrense' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::GeotekniskUndersøkelseGrense'"/>
+    </Error>
+    <Warning message="Type 'Geotekniskmetode' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::Geotekniskmetode'"/>
+    </Warning>
+    <Warning message="Type 'GeovitenskapeligObservasjon' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::GeovitenskapeligObservasjon'"/>
+    </Warning>
+    <Warning message="Type 'GeovitenskapeligUndersøkelse' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::GeovitenskapeligUndersøkelse'"/>
+    </Warning>
+    <Warning message="Type 'GeovitenskapeligUndersøkelseDelområde' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::GeovitenskapeligUndersøkelseDelområde'"/>
+    </Warning>
+    <Warning message="Type 'GeovitenskapeligUndersøkelseDelområdeGrense' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::GeovitenskapeligUndersøkelseDelområdeGrense'"/>
+    </Warning>
+    <Warning message="Type 'GeovitenskapeligUndersøkelseGrense' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::GeovitenskapeligUndersøkelseGrense'"/>
+    </Warning>
+    <Warning message="Type 'GeovitenskapligBorehull' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::GeovitenskapligBorehull'"/>
+    </Warning>
+    <Warning message="Type 'GeovitenskapligBorehullUndersøkelse' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::GeovitenskapligBorehullUndersøkelse'"/>
+    </Warning>
+    <Error message="Type 'GravePrøve' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::GravePrøve'"/>
+    </Error>
+    <Error message="Type 'GrunnvannMåling' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::GrunnvannMåling'"/>
+    </Error>
+    <Error message="Type 'HydrauliskTest' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::HydrauliskTest'"/>
+    </Error>
+    <Error message="Type 'KannePrøve' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::KannePrøve'"/>
+    </Error>
+    <Error message="Type 'KjerneBoring' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::KjerneBoring'"/>
+    </Error>
+    <Error message="Type 'KjernePrøve' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::KjernePrøve'"/>
+    </Error>
+    <Error message="Type 'KombinasjonSondering' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::KombinasjonSondering'"/>
+    </Error>
+    <Error message="Type 'MiljøUndersøkelse' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::MiljøUndersøkelse'"/>
+    </Error>
+    <Error message="Type 'NaverPrøve' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::NaverPrøve'"/>
+    </Error>
+    <Error message="Type 'Platebelastning' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::Platebelastning'"/>
+    </Error>
+    <Error message="Type 'PoretrykkMåling' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::PoretrykkMåling'"/>
+    </Error>
+    <Error message="Type 'RamPrøve' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::RamPrøve'"/>
+    </Error>
+    <Error message="Type 'SedimentPrøve' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::SedimentPrøve'"/>
+    </Error>
+    <Error message="Type 'SkovlPrøve' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::SkovlPrøve'"/>
+    </Error>
+    <Error message="Type 'StatiskSondering' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::StatiskSondering'"/>
+    </Error>
+    <Error message="Type 'StempelPrøve' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::StempelPrøve'"/>
+    </Error>
+    <Warning message="Type 'Supertype_Geotekn_obj_omr' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::Supertype_Geotekn_obj_omr'"/>
+    </Warning>
+    <Warning message="Type 'Supertype_Geotekn_obj_pkt' is abstract. Conversion of abstract types is only supported by this target if parameter 'enableFragments' is set to 'true'. The type will be ignored.">
+      <Detail message="Context: class 'uml-modell::Abstrakte Featurtyper::Supertype_Geotekn_obj_pkt'"/>
+    </Warning>
+    <Error message="Type 'Trykksondering' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::Trykksondering'"/>
+    </Error>
+    <Error message="Type 'VannPrøve' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::VannPrøve'"/>
+    </Error>
+    <Error message="Type 'Vingeboring' has one or more supertypes. Conversion of inheritance relationships is only supported by this target if parameter 'enableFragments' is set to 'true'. The relationship will be ignored.">
+      <Detail message="Context: class 'uml-modell::FeatureTypes::Vingeboring'"/>
+    </Error>
+    <Info message="Could not compute a label for codelist/enumeration 'NedpressingsKapasitet'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::NedpressingsKapasitet'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'SondeKvalitetsKlasse'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::SondeKvalitetsKlasse'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'AkviferType'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::AkviferType'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'KvalitetBorlengdeTilBerg'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::KvalitetBorlengdeTilBerg'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'HovedLagKlassifisering'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::HovedLagKlassifisering'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'NADAG_Høyderef'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::NADAG_Høyderef'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'KlassifiseringsMetode'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::KlassifiseringsMetode'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'NADAG_DokumentType'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::NADAG_DokumentType'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'VannPrøveKilde'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::VannPrøveKilde'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'Målemetode'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::Målemetode'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'MålemetodeHøyde'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::MålemetodeHøyde'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'GeotekniskMetodeKode'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::GeotekniskMetodeKode'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'GeotekniskStoppkode'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::GeotekniskStoppkode'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'RepresentasjonKvalitet'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::RepresentasjonKvalitet'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'FeltUndersTypeKode'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::FeltUndersTypeKode'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'GeotekniskFeltUndersMetodeKode'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::GeotekniskFeltUndersMetodeKode'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'TolkningMetodeKode'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::TolkningMetodeKode'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'KvikkleirePåvisningKode'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::KvikkleirePåvisningKode'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'PoretrykkMåleKategori'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::PoretrykkMåleKategori'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'GjennomboretMedium'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::GjennomboretMedium'"/>
+    </Info>
+    <Info message="Could not compute a label for codelist/enumeration 'PrøvetakingType'. A label is required for the ldproxy encoding as a codelist. Check the label template in the target configuration as well as the codelist/enumeration model, to ensure that a label can be created. Using the type name as label.">
+      <Detail message="Context: property 'uml-modell::PrøvetakingType'"/>
+    </Info>
+    <ProcessFlowInfo message="Executed target class 'de.interactive_instruments.shapechange.core.target.ldproxy2.Ldproxy2Target' for input ID: 'LDPROXY_FLAT'.&#10;-------------------------------------------------"/>
+  </Messages>
+  <Results>
+    <Result href="file:/home/runner/work/produktspesifikasjon_testinger/produktspesifikasjon_testinger/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag2/uml-modell/schema/jsonschema/INPUT/umlmodell/uml-modell.json" target="JSON Schema">uml-modell.json</Result>
+  </Results>
+</ShapeChangeResult>

@@ -1,0 +1,17 @@
+---
+label: GeotekniskStoppkode
+entries:
+  AntattBerg: AntattBerg
+  AntattSteinBlokk: AntattSteinBlokk
+  BruddBorstangSpiss: BruddBorstangSpiss
+  DybdeIBergOppnådd: DybdeIBergOppnådd
+  DybdeIFjellMerEnn3Meter: DybdeIFjellMerEnn3Meter
+  DybdeIFjellMerEnn3MeterMedAnalyse: DybdeIFjellMerEnn3MeterMedAnalyse
+  KjerneBoringMerEnn3Meter: KjerneBoringMerEnn3Meter
+  MaterialEllerMaskinFeil: MaterialEllerMaskinFeil
+  SonderingAvbrutt: SonderingAvbrutt
+  SonderingAvbruttFastGrunn: SonderingAvbruttFastGrunn
+  SonderingAvsluttetUtenStopp: SonderingAvsluttetUtenStopp
+  SteinBlokkFjell: SteinBlokkFjell
+  Uspesifisert: Uspesifisert
+sourceType: TEMPLATES

@@ -1,0 +1,68 @@
+---
+label: Målemetode
+entries:
+  Aerotriangulert: Aerotriangulert
+  Analytisk plotter: Analytisk plotter
+  Annet  (denne har ingen mening, bør fjernes?): "Annet  (denne har ingen mening, bør fjernes?)"
+  Annet (spesifiseres i filhode) ( bør vel fjernes, blir borte ved overføring mellom systemer): "Annet (spesifiseres i filhode) ( bør vel fjernes, blir borte ved overføring mellom systemer)"
+  Autograf - vanlig registrering: Autograf - vanlig registrering
+  Beregnet: Beregnet
+  Dig. på skjerm fra scannet samkopi: Dig. på skjerm fra scannet samkopi
+  Digitalisert fra flybilde - monodigitalisert fra film: Digitalisert fra flybilde - monodigitalisert fra film
+  Digitalisert fra flybilde - monodigitalisert fra fotokopi: Digitalisert fra flybilde - monodigitalisert fra fotokopi
+  Digitalisert fra krokering på kart: Digitalisert fra krokering på kart
+  Digitalisert fra ortofoto: Digitalisert fra ortofoto
+  Digitalisert fra ortofoto - film: Digitalisert fra ortofoto - film
+  Digitalisert fra ortofoto - fotokopi: Digitalisert fra ortofoto - fotokopi
+  Digitalisert på dig.bord fra blyantoriginal: Digitalisert på dig.bord fra blyantoriginal
+  Digitalisert på dig.bord fra ortofoto/flybilde: Digitalisert på dig.bord fra ortofoto/flybilde
+  Digitalisert på dig.bord fra papirkopi: Digitalisert på dig.bord fra papirkopi
+  Digitalisert på dig.bord fra rissefolie: Digitalisert på dig.bord fra rissefolie
+  Digitalisert på dig.bord fra strek-kart: Digitalisert på dig.bord fra strek-kart
+  Digitalisert på dig.bord fra transparent film - god kvalitet: Digitalisert på dig.bord fra transparent film - god kvalitet
+  Digitalisert på dig.bord fra transparent film - mindre god kvalitet: Digitalisert på dig.bord fra transparent film - mindre god kvalitet
+  Digitalisert på skjerm fra satellittbilde: Digitalisert på skjerm fra satellittbilde
+  Digitalt stereoinstrument: Digitalt stereoinstrument
+  Direkte innlagt på skjerm: Direkte innlagt på skjerm
+  Fastsatt punkt: Fastsatt punkt
+  Fastsatt ved dom eller kongelig resolusjon: Fastsatt ved dom eller kongelig resolusjon
+  Flybåren laserscanner: Flybåren laserscanner
+  Frihåndstegning: Frihåndstegning
+  GPS Fasemåling RTK: GPS Fasemåling RTK
+  GPS Fasemåling, andre metoder: "GPS Fasemåling, andre metoder"
+  GPS Fasemåling, float-løsning: "GPS Fasemåling, float-løsning"
+  GPS Fasemåling, statisk måling: "GPS Fasemåling, statisk måling"
+  GPS Kodemåling, enkeltmålinger: "GPS Kodemåling, enkeltmålinger"
+  GPS Kodemåling, relative målinger: "GPS Kodemåling, relative målinger"
+  Generalisert: Generalisert
+  Generert i terrengmodell: Generert i terrengmodell
+  Generert sentralpunkt: Generert sentralpunkt
+  Generert sirkelgeometri: Generert sirkelgeometri
+  Genererte data (interpolasjon): Genererte data (interpolasjon)
+  Kombinasjon av GPS/Treghet: Kombinasjon av GPS/Treghet
+  Koordinater hentet fra GAB: Koordinater hentet fra GAB
+  Koordinater hentet fra JREG: Koordinater hentet fra JREG
+  Målt med målehjul: Målt med målehjul
+  Målt med stigningsmåler: Målt med stigningsmåler
+  Målt med stikkstang: Målt med stikkstang
+  Målt med waterstang: Målt med waterstang
+  Ortogonalmetoden: Ortogonalmetoden
+  Sammenknytningspunkt/randpunkt: Sammenknytningspunkt/randpunkt
+  Scannet fra blyantoriginal: Scannet fra blyantoriginal
+  Scannet fra kart: Scannet fra kart
+  Scannet fra papirkopi: Scannet fra papirkopi
+  Scannet fra rissefolie: Scannet fra rissefolie
+  Scannet fra transparent folie - god kvalitet: Scannet fra transparent folie - god kvalitet
+  Scannet fra transparent folie - mindre god kvalitet: Scannet fra transparent folie - mindre god kvalitet
+  Spesielle metoder: Spesielle metoder
+  Stereoinstrument: Stereoinstrument
+  Tatt fra plan: Tatt fra plan
+  Teodolitt med elektronisk avstandsmåler: Teodolitt med elektronisk avstandsmåler
+  Teodolitt med målebånd: Teodolitt med målebånd
+  Terrengmålt: Terrengmålt
+  Totalstasjon: Totalstasjon
+  Treghetsstedfesting: Treghetsstedfesting
+  Ukjent målemetode: Ukjent målemetode
+  Utmål: Utmål
+  Vektet middel: Vektet middel
+sourceType: TEMPLATES

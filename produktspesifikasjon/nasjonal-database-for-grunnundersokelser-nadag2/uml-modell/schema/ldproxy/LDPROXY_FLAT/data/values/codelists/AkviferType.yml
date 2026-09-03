@@ -1,0 +1,9 @@
+---
+label: AkviferType
+entries:
+  Artesisk: Artesisk
+  Ikke angitt: Ikke angitt
+  Lukket: Lukket
+  Utett: Utett
+  Åpen: Åpen
+sourceType: TEMPLATES

@@ -1,0 +1,45 @@
+---
+label: HovedLagKlassifisering
+entries:
+  AnnetOrganiskMateriale: AnnetOrganiskMateriale
+  AntattForurensning: AntattForurensning
+  Berg: Berg
+  BergEllerBlokk: BergEllerBlokk
+  Blokk: Blokk
+  BlokkigOgSteinigMorene: BlokkigOgSteinigMorene
+  DelvisFibrigTorv: DelvisFibrigTorv
+  Dy: Dy
+  FibrigTorv: FibrigTorv
+  ForvitretTorv: ForvitretTorv
+  Friksjonsjord: Friksjonsjord
+  Fyllmasse: Fyllmasse
+  Grus: Grus
+  GrusigMorene: GrusigMorene
+  Gytje: Gytje
+  GytjeOgLeire: GytjeOgLeire
+  Humus: Humus
+  Jord: Jord
+  Kohesjonsjord: Kohesjonsjord
+  Kull: Kull
+  Kvikkleire: Kvikkleire
+  Leire: Leire
+  LeirigMorene: LeirigMorene
+  Matjord: Matjord
+  Morene: Morene
+  OppsprukketBerg: OppsprukketBerg
+  Planterester: Planterester
+  Sand: Sand
+  SandigMorene: SandigMorene
+  Silt: Silt
+  SiltigMorene: SiltigMorene
+  Skjell: Skjell
+  Skjellgrus: Skjellgrus
+  Skjellsand: Skjellsand
+  Stein: Stein
+  SteinigMorene: SteinigMorene
+  SulfidholdigJord: SulfidholdigJord
+  Torv: Torv
+  TørrskorpeLeire: TørrskorpeLeire
+  UkjentMateriale: UkjentMateriale
+  UspesifisertMateriale: UspesifisertMateriale
+sourceType: TEMPLATES
