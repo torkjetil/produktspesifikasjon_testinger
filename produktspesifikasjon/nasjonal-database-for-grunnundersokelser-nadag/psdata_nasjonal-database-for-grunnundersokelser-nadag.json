@@ -141,10 +141,6 @@
         "nameOfMeasure": "Prosentvis oppfyllelse av FAIR-prinsipper",
         "measureDescription": "Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)",
         "result": "90"
-      },
-      {
-        "nameOfMeasure": "FAIR",
-        "result": "Prosentvis oppfyllelse av FAIR-prinsipper: 90%"
       }
     ]
   },
@@ -353,7 +349,7 @@
   "metadataSection": {
     "metadataStandard": "ISO19115",
     "metadataStandardVersion": "2003",
-    "metadataDate": "2026-09-03",
+    "metadataDate": "2026-09-09",
     "language": "nor",
     "contact": {
       "organizationName": "Norges geologiske undersøkelse",

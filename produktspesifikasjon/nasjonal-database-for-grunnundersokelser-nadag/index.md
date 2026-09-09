@@ -115,12 +115,10 @@ Fra og med 2025 er det lovfestet plikt for innmelding av geotekniske grunnunders
 
 **Nivå**: dataset
 
-- **Kvalitetsmål**: Prosentvis oppfyllelse av FAIR-prinsipper
-  **Målebeskrivelse**: Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)
-  **Resultat**: 90
+**Kvalitetsmål**: Prosentvis oppfyllelse av FAIR-prinsipper
 
-- **Kvalitetsmål**: FAIR
-  **Resultat**: Prosentvis oppfyllelse av FAIR-prinsipper: 90%
+- **Målebeskrivelse**: Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)
+- **Resultat**: 90
 
 ## Datafangst og produksjon
 
@@ -162,7 +160,7 @@ Fra og med 2025 er det lovfestet plikt for innmelding av geotekniske grunnunders
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-09-03
+**Metadatadato**: 2026-09-09
 
 **språk**: nor
 
