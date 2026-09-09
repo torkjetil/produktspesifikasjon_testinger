@@ -31,7 +31,16 @@ Datasettet genereres fra den landsdekkende kopien av reguleringsplaner. Denne ho
   - **Til**: 2026-09-01
 
 ## Om spesifikasjonen
+Denne produktspesifikasjonen beskriver datasettet og hvordan det skal forstås av brukere som skal lese, produsere eller utveksle data.
 
+## Historikk
+
+Første versjon.
+
+## Endringslogg
+
+| Versjon | Dato | Endring |
+|---------|------|---------|
 
 > **Denne versjonen av produktspesifikasjonen:** <br>
 > **Opprettet dato:** 2025-09-16<br>
